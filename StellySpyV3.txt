@@ -4,7 +4,7 @@ UI Made by deusferrinho 👑
 (All dc names)
 ]]
 
--- Instances: 163 | Scripts: 37 | Modules: 1 | Tags: 0
+-- Instances: 164 | Scripts: 38 | Modules: 1 | Tags: 0
 local G2L = {};
 
 -- StarterGui.StellySpy
@@ -1446,6 +1446,11 @@ G2L["a2"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 -- StarterGui.StellySpy.Frame.CDrag
 G2L["a3"] = Instance.new("LocalScript", G2L["2"]);
 G2L["a3"]["Name"] = [[CDrag]];
+
+
+-- StarterGui.StellySpy.SetCore
+G2L["a4"] = Instance.new("LocalScript", G2L["1"]);
+G2L["a4"]["Name"] = [[SetCore]];
 
 
 -- Require G2L wrapper
@@ -2890,5 +2895,15 @@ local script = G2L["a3"];
 	
 end;
 task.spawn(C_a3);
+-- StarterGui.StellySpy.SetCore
+local function C_a4()
+local script = G2L["a4"];
+	local screenGui = script.Parent
+	local CoreGui = game:GetService("CoreGui")
+	
+	screenGui.Parent = CoreGui
+	
+end;
+task.spawn(C_a4);
 
 return G2L["1"], require;
