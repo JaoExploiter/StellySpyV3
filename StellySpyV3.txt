@@ -1,0 +1,2888 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+]=]
+
+-- Instances: 162 | Scripts: 36 | Modules: 1 | Tags: 0
+local G2L = {};
+
+-- StarterGui.Hold The Cap
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["Name"] = [[Hold The Cap]];
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+G2L["1"]["ResetOnSpawn"] = false;
+
+
+-- StarterGui.Hold The Cap.Frame
+G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["BorderSizePixel"] = 0;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2"]["Size"] = UDim2.new(0, 425, 0, 250);
+G2L["2"]["Position"] = UDim2.new(0.28571, 27, 0.32491, -11);
+G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.Hold The Cap.Frame.TopBar
+G2L["3"] = Instance.new("Frame", G2L["2"]);
+G2L["3"]["BorderSizePixel"] = 0;
+G2L["3"]["BackgroundColor3"] = Color3.fromRGB(39, 37, 40);
+G2L["3"]["AnchorPoint"] = Vector2.new(0.5, 0);
+G2L["3"]["Size"] = UDim2.new(1, 0, 0.08, 0);
+G2L["3"]["Position"] = UDim2.new(0.5, 0, 0, 0);
+G2L["3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3"]["Name"] = [[TopBar]];
+
+
+-- StarterGui.Hold The Cap.Frame.TopBar.X
+G2L["4"] = Instance.new("ImageButton", G2L["3"]);
+G2L["4"]["BorderSizePixel"] = 0;
+G2L["4"]["ScaleType"] = Enum.ScaleType.Fit;
+G2L["4"]["BackgroundColor3"] = Color3.fromRGB(38, 36, 39);
+G2L["4"]["AnchorPoint"] = Vector2.new(1, 0.5);
+G2L["4"]["Image"] = [[rbxassetid://10002373478]];
+G2L["4"]["Size"] = UDim2.new(0.04706, 0, 1, 0);
+G2L["4"]["Name"] = [[X]];
+G2L["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4"]["Position"] = UDim2.new(1, 0, 0.5, 0);
+
+
+-- StarterGui.Hold The Cap.Frame.TopBar.Name
+G2L["5"] = Instance.new("TextLabel", G2L["3"]);
+G2L["5"]["TextWrapped"] = true;
+G2L["5"]["BorderSizePixel"] = 0;
+G2L["5"]["TextScaled"] = true;
+G2L["5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5"]["TextSize"] = 12;
+G2L["5"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5"]["BackgroundTransparency"] = 1;
+G2L["5"]["Size"] = UDim2.new(0.20252, 0, 1, 0);
+G2L["5"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5"]["Text"] = [[StellySpy]];
+G2L["5"]["AutomaticSize"] = Enum.AutomaticSize.X;
+G2L["5"]["Name"] = [[Name]];
+G2L["5"]["Position"] = UDim2.new(-0.00227, 0, 0, 0);
+
+
+-- StarterGui.Hold The Cap.Frame.TopBar.Name.UITextSizeConstraint
+G2L["6"] = Instance.new("UITextSizeConstraint", G2L["5"]);
+G2L["6"]["MaxTextSize"] = 15;
+G2L["6"]["MinTextSize"] = 15;
+
+
+-- StarterGui.Hold The Cap.Frame.TopBar.Name.LocalScript
+G2L["7"] = Instance.new("LocalScript", G2L["5"]);
+
+
+
+-- StarterGui.Hold The Cap.Frame.TopBar.V3
+G2L["8"] = Instance.new("TextLabel", G2L["3"]);
+G2L["8"]["TextWrapped"] = true;
+G2L["8"]["BorderSizePixel"] = 0;
+G2L["8"]["TextScaled"] = true;
+G2L["8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8"]["TextSize"] = 12;
+G2L["8"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8"]["BackgroundTransparency"] = 1;
+G2L["8"]["Size"] = UDim2.new(0.06059, 0, 1, 0);
+G2L["8"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8"]["Text"] = [[V3]];
+G2L["8"]["AutomaticSize"] = Enum.AutomaticSize.X;
+G2L["8"]["Name"] = [[V3]];
+G2L["8"]["Position"] = UDim2.new(0.16706, 0, 0, 0);
+
+
+-- StarterGui.Hold The Cap.Frame.TopBar.V3.UITextSizeConstraint
+G2L["9"] = Instance.new("UITextSizeConstraint", G2L["8"]);
+G2L["9"]["MaxTextSize"] = 15;
+G2L["9"]["MinTextSize"] = 15;
+
+
+-- StarterGui.Hold The Cap.Frame.TopBar.V3.LocalScript
+G2L["a"] = Instance.new("LocalScript", G2L["8"]);
+
+
+
+-- StarterGui.Hold The Cap.Frame.TopBar.V3.mobile
+G2L["b"] = Instance.new("LocalScript", G2L["8"]);
+G2L["b"]["Name"] = [[mobile]];
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons
+G2L["c"] = Instance.new("Frame", G2L["2"]);
+G2L["c"]["BorderSizePixel"] = 0;
+G2L["c"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["c"]["AnchorPoint"] = Vector2.new(0.5, 1);
+G2L["c"]["Size"] = UDim2.new(0.70588, 0, 0.34, 0);
+G2L["c"]["Position"] = UDim2.new(0.64471, 0, 1, 0);
+G2L["c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c"]["Name"] = [[Buttons]];
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.CopyR
+G2L["d"] = Instance.new("TextButton", G2L["c"]);
+G2L["d"]["TextWrapped"] = true;
+G2L["d"]["BorderSizePixel"] = 0;
+G2L["d"]["TextSize"] = 14;
+G2L["d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["d"]["TextScaled"] = true;
+G2L["d"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 30);
+G2L["d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["d"]["Size"] = UDim2.new(0, 95, 0, 18);
+G2L["d"]["Name"] = [[CopyR]];
+G2L["d"]["BorderColor3"] = Color3.fromRGB(151, 151, 151);
+G2L["d"]["Text"] = [[]];
+G2L["d"]["Position"] = UDim2.new(0.32, 0, 0.08235, 0);
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.CopyR.Border
+G2L["e"] = Instance.new("Frame", G2L["d"]);
+G2L["e"]["BorderSizePixel"] = 0;
+G2L["e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e"]["Size"] = UDim2.new(0.05, 0, 1, 0);
+G2L["e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e"]["Name"] = [[Border]];
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.CopyR.TextLabel
+G2L["f"] = Instance.new("TextLabel", G2L["d"]);
+G2L["f"]["TextWrapped"] = true;
+G2L["f"]["BorderSizePixel"] = 0;
+G2L["f"]["TextScaled"] = true;
+G2L["f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f"]["TextSize"] = 14;
+G2L["f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f"]["BackgroundTransparency"] = 1;
+G2L["f"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["f"]["Size"] = UDim2.new(0.89474, 0, 1, 0);
+G2L["f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f"]["Text"] = [[Copy Remote]];
+G2L["f"]["Position"] = UDim2.new(0.53684, 0, 0.48382, 0);
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.CopyR.TextLabel.UITextSizeConstraint
+G2L["10"] = Instance.new("UITextSizeConstraint", G2L["f"]);
+G2L["10"]["MaxTextSize"] = 14;
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.CopyR.UITextSizeConstraint
+G2L["11"] = Instance.new("UITextSizeConstraint", G2L["d"]);
+G2L["11"]["MaxTextSize"] = 14;
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.CopyR.UIStroke
+G2L["12"] = Instance.new("UIStroke", G2L["d"]);
+G2L["12"]["Transparency"] = 0.5;
+G2L["12"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["12"]["Color"] = Color3.fromRGB(151, 151, 151);
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.CopyR.Animate
+G2L["13"] = Instance.new("LocalScript", G2L["d"]);
+G2L["13"]["Name"] = [[Animate]];
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.CopyC
+G2L["14"] = Instance.new("TextButton", G2L["c"]);
+G2L["14"]["TextWrapped"] = true;
+G2L["14"]["BorderSizePixel"] = 0;
+G2L["14"]["TextSize"] = 14;
+G2L["14"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["14"]["TextScaled"] = true;
+G2L["14"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 30);
+G2L["14"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["14"]["Size"] = UDim2.new(0, 95, 0, 18);
+G2L["14"]["Name"] = [[CopyC]];
+G2L["14"]["BorderColor3"] = Color3.fromRGB(151, 151, 151);
+G2L["14"]["Text"] = [[]];
+G2L["14"]["Position"] = UDim2.new(0, 0, 0.08235, 0);
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.CopyC.Border
+G2L["15"] = Instance.new("Frame", G2L["14"]);
+G2L["15"]["BorderSizePixel"] = 0;
+G2L["15"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["15"]["Size"] = UDim2.new(0.05, 0, 1, 0);
+G2L["15"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["15"]["Name"] = [[Border]];
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.CopyC.TextLabel
+G2L["16"] = Instance.new("TextLabel", G2L["14"]);
+G2L["16"]["TextWrapped"] = true;
+G2L["16"]["BorderSizePixel"] = 0;
+G2L["16"]["TextScaled"] = true;
+G2L["16"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["16"]["TextSize"] = 14;
+G2L["16"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["16"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["16"]["BackgroundTransparency"] = 1;
+G2L["16"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["16"]["Size"] = UDim2.new(0.89474, 0, 1, 0);
+G2L["16"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["16"]["Text"] = [[Copy Code]];
+G2L["16"]["Position"] = UDim2.new(0.53684, 0, 0.48382, 0);
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.CopyC.TextLabel.UITextSizeConstraint
+G2L["17"] = Instance.new("UITextSizeConstraint", G2L["16"]);
+G2L["17"]["MaxTextSize"] = 14;
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.CopyC.UITextSizeConstraint
+G2L["18"] = Instance.new("UITextSizeConstraint", G2L["14"]);
+G2L["18"]["MaxTextSize"] = 14;
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.CopyC.UIStroke
+G2L["19"] = Instance.new("UIStroke", G2L["14"]);
+G2L["19"]["Transparency"] = 0.5;
+G2L["19"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["19"]["Color"] = Color3.fromRGB(151, 151, 151);
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.CopyC.Animate
+G2L["1a"] = Instance.new("LocalScript", G2L["14"]);
+G2L["1a"]["Name"] = [[Animate]];
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.CopyC.LocalScript
+G2L["1b"] = Instance.new("LocalScript", G2L["14"]);
+
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.Run
+G2L["1c"] = Instance.new("TextButton", G2L["c"]);
+G2L["1c"]["TextWrapped"] = true;
+G2L["1c"]["BorderSizePixel"] = 0;
+G2L["1c"]["TextSize"] = 14;
+G2L["1c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1c"]["TextScaled"] = true;
+G2L["1c"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 30);
+G2L["1c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1c"]["Size"] = UDim2.new(0, 95, 0, 18);
+G2L["1c"]["Name"] = [[Run]];
+G2L["1c"]["BorderColor3"] = Color3.fromRGB(151, 151, 151);
+G2L["1c"]["Text"] = [[]];
+G2L["1c"]["Position"] = UDim2.new(0.69333, 0, 0.08235, 0);
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.Run.Border
+G2L["1d"] = Instance.new("Frame", G2L["1c"]);
+G2L["1d"]["BorderSizePixel"] = 0;
+G2L["1d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1d"]["Size"] = UDim2.new(0.05, 0, 1, 0);
+G2L["1d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1d"]["Name"] = [[Border]];
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.Run.TextLabel
+G2L["1e"] = Instance.new("TextLabel", G2L["1c"]);
+G2L["1e"]["TextWrapped"] = true;
+G2L["1e"]["BorderSizePixel"] = 0;
+G2L["1e"]["TextScaled"] = true;
+G2L["1e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1e"]["TextSize"] = 14;
+G2L["1e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1e"]["BackgroundTransparency"] = 1;
+G2L["1e"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["1e"]["Size"] = UDim2.new(0.89474, 0, 1, 0);
+G2L["1e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1e"]["Text"] = [[Fire or Invoke]];
+G2L["1e"]["Position"] = UDim2.new(0.53684, 0, 0.48382, 0);
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.Run.TextLabel.UITextSizeConstraint
+G2L["1f"] = Instance.new("UITextSizeConstraint", G2L["1e"]);
+G2L["1f"]["MaxTextSize"] = 14;
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.Run.UITextSizeConstraint
+G2L["20"] = Instance.new("UITextSizeConstraint", G2L["1c"]);
+G2L["20"]["MaxTextSize"] = 14;
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.Run.UIStroke
+G2L["21"] = Instance.new("UIStroke", G2L["1c"]);
+G2L["21"]["Transparency"] = 0.5;
+G2L["21"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["21"]["Color"] = Color3.fromRGB(151, 151, 151);
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.Run.Animate
+G2L["22"] = Instance.new("LocalScript", G2L["1c"]);
+G2L["22"]["Name"] = [[Animate]];
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.Clear
+G2L["23"] = Instance.new("TextButton", G2L["c"]);
+G2L["23"]["TextWrapped"] = true;
+G2L["23"]["BorderSizePixel"] = 0;
+G2L["23"]["TextSize"] = 14;
+G2L["23"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["23"]["TextScaled"] = true;
+G2L["23"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 30);
+G2L["23"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["23"]["Size"] = UDim2.new(0, 95, 0, 18);
+G2L["23"]["Name"] = [[Clear]];
+G2L["23"]["BorderColor3"] = Color3.fromRGB(151, 151, 151);
+G2L["23"]["Text"] = [[]];
+G2L["23"]["Position"] = UDim2.new(0, 0, 0.32941, 0);
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.Clear.Border
+G2L["24"] = Instance.new("Frame", G2L["23"]);
+G2L["24"]["BorderSizePixel"] = 0;
+G2L["24"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["24"]["Size"] = UDim2.new(0.05, 0, 1, 0);
+G2L["24"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["24"]["Name"] = [[Border]];
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.Clear.TextLabel
+G2L["25"] = Instance.new("TextLabel", G2L["23"]);
+G2L["25"]["TextWrapped"] = true;
+G2L["25"]["BorderSizePixel"] = 0;
+G2L["25"]["TextScaled"] = true;
+G2L["25"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["25"]["TextSize"] = 14;
+G2L["25"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["25"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["25"]["BackgroundTransparency"] = 1;
+G2L["25"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["25"]["Size"] = UDim2.new(0.89474, 0, 1, 0);
+G2L["25"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["25"]["Text"] = [[Clear Output]];
+G2L["25"]["Position"] = UDim2.new(0.53684, 0, 0.48382, 0);
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.Clear.TextLabel.UITextSizeConstraint
+G2L["26"] = Instance.new("UITextSizeConstraint", G2L["25"]);
+G2L["26"]["MaxTextSize"] = 14;
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.Clear.UITextSizeConstraint
+G2L["27"] = Instance.new("UITextSizeConstraint", G2L["23"]);
+G2L["27"]["MaxTextSize"] = 14;
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.Clear.UIStroke
+G2L["28"] = Instance.new("UIStroke", G2L["23"]);
+G2L["28"]["Transparency"] = 0.5;
+G2L["28"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["28"]["Color"] = Color3.fromRGB(151, 151, 151);
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.Clear.Animate
+G2L["29"] = Instance.new("LocalScript", G2L["23"]);
+G2L["29"]["Name"] = [[Animate]];
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.UIListLayout
+G2L["2a"] = Instance.new("UIListLayout", G2L["c"]);
+G2L["2a"]["Wraps"] = true;
+G2L["2a"]["Padding"] = UDim.new(0, 5);
+G2L["2a"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+G2L["2a"]["FillDirection"] = Enum.FillDirection.Horizontal;
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.UIPadding
+G2L["2b"] = Instance.new("UIPadding", G2L["c"]);
+G2L["2b"]["PaddingTop"] = UDim.new(0, 5);
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.RunS
+G2L["2c"] = Instance.new("TextButton", G2L["c"]);
+G2L["2c"]["TextWrapped"] = true;
+G2L["2c"]["BorderSizePixel"] = 0;
+G2L["2c"]["TextSize"] = 14;
+G2L["2c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2c"]["TextScaled"] = true;
+G2L["2c"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 30);
+G2L["2c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2c"]["Size"] = UDim2.new(0, 95, 0, 18);
+G2L["2c"]["Name"] = [[RunS]];
+G2L["2c"]["BorderColor3"] = Color3.fromRGB(151, 151, 151);
+G2L["2c"]["Text"] = [[]];
+G2L["2c"]["Position"] = UDim2.new(0.69333, 0, 0.08235, 0);
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.RunS.Border
+G2L["2d"] = Instance.new("Frame", G2L["2c"]);
+G2L["2d"]["BorderSizePixel"] = 0;
+G2L["2d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2d"]["Size"] = UDim2.new(0.05, 0, 1, 0);
+G2L["2d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2d"]["Name"] = [[Border]];
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.RunS.TextLabel
+G2L["2e"] = Instance.new("TextLabel", G2L["2c"]);
+G2L["2e"]["TextWrapped"] = true;
+G2L["2e"]["BorderSizePixel"] = 0;
+G2L["2e"]["TextScaled"] = true;
+G2L["2e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2e"]["TextSize"] = 14;
+G2L["2e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2e"]["BackgroundTransparency"] = 1;
+G2L["2e"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["2e"]["Size"] = UDim2.new(0.89474, 0, 1, 0);
+G2L["2e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2e"]["Text"] = [[Run Code]];
+G2L["2e"]["Position"] = UDim2.new(0.53684, 0, 0.48382, 0);
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.RunS.TextLabel.UITextSizeConstraint
+G2L["2f"] = Instance.new("UITextSizeConstraint", G2L["2e"]);
+G2L["2f"]["MaxTextSize"] = 14;
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.RunS.UITextSizeConstraint
+G2L["30"] = Instance.new("UITextSizeConstraint", G2L["2c"]);
+G2L["30"]["MaxTextSize"] = 14;
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.RunS.UIStroke
+G2L["31"] = Instance.new("UIStroke", G2L["2c"]);
+G2L["31"]["Transparency"] = 0.5;
+G2L["31"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["31"]["Color"] = Color3.fromRGB(151, 151, 151);
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.RunS.Animate
+G2L["32"] = Instance.new("LocalScript", G2L["2c"]);
+G2L["32"]["Name"] = [[Animate]];
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.RunS.LocalScript
+G2L["33"] = Instance.new("LocalScript", G2L["2c"]);
+
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.dc
+G2L["34"] = Instance.new("TextButton", G2L["c"]);
+G2L["34"]["TextWrapped"] = true;
+G2L["34"]["BorderSizePixel"] = 0;
+G2L["34"]["TextSize"] = 14;
+G2L["34"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["34"]["TextScaled"] = true;
+G2L["34"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 30);
+G2L["34"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["34"]["Size"] = UDim2.new(0, 95, 0, 18);
+G2L["34"]["Name"] = [[dc]];
+G2L["34"]["BorderColor3"] = Color3.fromRGB(151, 151, 151);
+G2L["34"]["Text"] = [[]];
+G2L["34"]["Position"] = UDim2.new(0.69333, 0, 0.08235, 0);
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.dc.Border
+G2L["35"] = Instance.new("Frame", G2L["34"]);
+G2L["35"]["BorderSizePixel"] = 0;
+G2L["35"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["35"]["Size"] = UDim2.new(0.05, 0, 1, 0);
+G2L["35"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["35"]["Name"] = [[Border]];
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.dc.TextLabel
+G2L["36"] = Instance.new("TextLabel", G2L["34"]);
+G2L["36"]["TextWrapped"] = true;
+G2L["36"]["BorderSizePixel"] = 0;
+G2L["36"]["TextScaled"] = true;
+G2L["36"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["36"]["TextSize"] = 14;
+G2L["36"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["36"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["36"]["BackgroundTransparency"] = 1;
+G2L["36"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["36"]["Size"] = UDim2.new(0.89474, 0, 1, 0);
+G2L["36"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["36"]["Text"] = [[Discord]];
+G2L["36"]["Position"] = UDim2.new(0.53684, 0, 0.48382, 0);
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.dc.TextLabel.UITextSizeConstraint
+G2L["37"] = Instance.new("UITextSizeConstraint", G2L["36"]);
+G2L["37"]["MaxTextSize"] = 14;
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.dc.UITextSizeConstraint
+G2L["38"] = Instance.new("UITextSizeConstraint", G2L["34"]);
+G2L["38"]["MaxTextSize"] = 14;
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.dc.UIStroke
+G2L["39"] = Instance.new("UIStroke", G2L["34"]);
+G2L["39"]["Transparency"] = 0.5;
+G2L["39"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["39"]["Color"] = Color3.fromRGB(151, 151, 151);
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.dc.Animate
+G2L["3a"] = Instance.new("LocalScript", G2L["34"]);
+G2L["3a"]["Name"] = [[Animate]];
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.dc.LocalScript
+G2L["3b"] = Instance.new("LocalScript", G2L["34"]);
+
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.ClearL
+G2L["3c"] = Instance.new("TextButton", G2L["c"]);
+G2L["3c"]["TextWrapped"] = true;
+G2L["3c"]["BorderSizePixel"] = 0;
+G2L["3c"]["TextSize"] = 14;
+G2L["3c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3c"]["TextScaled"] = true;
+G2L["3c"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 30);
+G2L["3c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["3c"]["Size"] = UDim2.new(0, 95, 0, 18);
+G2L["3c"]["Name"] = [[ClearL]];
+G2L["3c"]["BorderColor3"] = Color3.fromRGB(151, 151, 151);
+G2L["3c"]["Text"] = [[]];
+G2L["3c"]["Position"] = UDim2.new(0, 0, 0.32941, 0);
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.ClearL.Border
+G2L["3d"] = Instance.new("Frame", G2L["3c"]);
+G2L["3d"]["BorderSizePixel"] = 0;
+G2L["3d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3d"]["Size"] = UDim2.new(0.05, 0, 1, 0);
+G2L["3d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3d"]["Name"] = [[Border]];
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.ClearL.TextLabel
+G2L["3e"] = Instance.new("TextLabel", G2L["3c"]);
+G2L["3e"]["TextWrapped"] = true;
+G2L["3e"]["BorderSizePixel"] = 0;
+G2L["3e"]["TextScaled"] = true;
+G2L["3e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3e"]["TextSize"] = 14;
+G2L["3e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["3e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3e"]["BackgroundTransparency"] = 1;
+G2L["3e"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["3e"]["Size"] = UDim2.new(0.89474, 0, 1, 0);
+G2L["3e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3e"]["Text"] = [[Clear Log]];
+G2L["3e"]["Position"] = UDim2.new(0.53684, 0, 0.48382, 0);
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.ClearL.TextLabel.UITextSizeConstraint
+G2L["3f"] = Instance.new("UITextSizeConstraint", G2L["3e"]);
+G2L["3f"]["MaxTextSize"] = 14;
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.ClearL.UITextSizeConstraint
+G2L["40"] = Instance.new("UITextSizeConstraint", G2L["3c"]);
+G2L["40"]["MaxTextSize"] = 14;
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.ClearL.UIStroke
+G2L["41"] = Instance.new("UIStroke", G2L["3c"]);
+G2L["41"]["Transparency"] = 0.5;
+G2L["41"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["41"]["Color"] = Color3.fromRGB(151, 151, 151);
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.ClearL.Animate
+G2L["42"] = Instance.new("LocalScript", G2L["3c"]);
+G2L["42"]["Name"] = [[Animate]];
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.ExL
+G2L["43"] = Instance.new("TextButton", G2L["c"]);
+G2L["43"]["TextWrapped"] = true;
+G2L["43"]["BorderSizePixel"] = 0;
+G2L["43"]["TextSize"] = 14;
+G2L["43"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["43"]["TextScaled"] = true;
+G2L["43"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 30);
+G2L["43"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["43"]["Size"] = UDim2.new(0, 95, 0, 18);
+G2L["43"]["Name"] = [[ExL]];
+G2L["43"]["BorderColor3"] = Color3.fromRGB(151, 151, 151);
+G2L["43"]["Text"] = [[]];
+G2L["43"]["Position"] = UDim2.new(0, 0, 0.32941, 0);
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.ExL.Border
+G2L["44"] = Instance.new("Frame", G2L["43"]);
+G2L["44"]["BorderSizePixel"] = 0;
+G2L["44"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["44"]["Size"] = UDim2.new(0.05, 0, 1, 0);
+G2L["44"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["44"]["Name"] = [[Border]];
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.ExL.
+G2L["45"] = Instance.new("TextLabel", G2L["43"]);
+G2L["45"]["TextWrapped"] = true;
+G2L["45"]["BorderSizePixel"] = 0;
+G2L["45"]["TextScaled"] = true;
+G2L["45"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["45"]["TextSize"] = 14;
+G2L["45"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["45"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["45"]["BackgroundTransparency"] = 1;
+G2L["45"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["45"]["Size"] = UDim2.new(0.89474, 0, 1, 0);
+G2L["45"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["45"]["Text"] = [[Exclude Remote]];
+G2L["45"]["Name"] = [[]];
+G2L["45"]["Position"] = UDim2.new(0.53684, 0, 0.48382, 0);
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.ExL..UITextSizeConstraint
+G2L["46"] = Instance.new("UITextSizeConstraint", G2L["45"]);
+G2L["46"]["MaxTextSize"] = 14;
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.ExL.UITextSizeConstraint
+G2L["47"] = Instance.new("UITextSizeConstraint", G2L["43"]);
+G2L["47"]["MaxTextSize"] = 14;
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.ExL.UIStroke
+G2L["48"] = Instance.new("UIStroke", G2L["43"]);
+G2L["48"]["Transparency"] = 0.5;
+G2L["48"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["48"]["Color"] = Color3.fromRGB(151, 151, 151);
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.ExL.Animate
+G2L["49"] = Instance.new("LocalScript", G2L["43"]);
+G2L["49"]["Name"] = [[Animate]];
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.yt
+G2L["4a"] = Instance.new("TextButton", G2L["c"]);
+G2L["4a"]["TextWrapped"] = true;
+G2L["4a"]["BorderSizePixel"] = 0;
+G2L["4a"]["TextSize"] = 14;
+G2L["4a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4a"]["TextScaled"] = true;
+G2L["4a"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 30);
+G2L["4a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["4a"]["Size"] = UDim2.new(0, 95, 0, 18);
+G2L["4a"]["Name"] = [[yt]];
+G2L["4a"]["BorderColor3"] = Color3.fromRGB(151, 151, 151);
+G2L["4a"]["Text"] = [[]];
+G2L["4a"]["Position"] = UDim2.new(0.69333, 0, 0.08235, 0);
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.yt.Border
+G2L["4b"] = Instance.new("Frame", G2L["4a"]);
+G2L["4b"]["BorderSizePixel"] = 0;
+G2L["4b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4b"]["Size"] = UDim2.new(0.05, 0, 1, 0);
+G2L["4b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4b"]["Name"] = [[Border]];
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.yt.TextLabel
+G2L["4c"] = Instance.new("TextLabel", G2L["4a"]);
+G2L["4c"]["TextWrapped"] = true;
+G2L["4c"]["BorderSizePixel"] = 0;
+G2L["4c"]["TextScaled"] = true;
+G2L["4c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4c"]["TextSize"] = 14;
+G2L["4c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["4c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4c"]["BackgroundTransparency"] = 1;
+G2L["4c"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["4c"]["Size"] = UDim2.new(0.89474, 0, 1, 0);
+G2L["4c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4c"]["Text"] = [[Youtube]];
+G2L["4c"]["Position"] = UDim2.new(0.53684, 0, 0.48382, 0);
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.yt.TextLabel.UITextSizeConstraint
+G2L["4d"] = Instance.new("UITextSizeConstraint", G2L["4c"]);
+G2L["4d"]["MaxTextSize"] = 14;
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.yt.UITextSizeConstraint
+G2L["4e"] = Instance.new("UITextSizeConstraint", G2L["4a"]);
+G2L["4e"]["MaxTextSize"] = 14;
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.yt.UIStroke
+G2L["4f"] = Instance.new("UIStroke", G2L["4a"]);
+G2L["4f"]["Transparency"] = 0.5;
+G2L["4f"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["4f"]["Color"] = Color3.fromRGB(151, 151, 151);
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.yt.Animate
+G2L["50"] = Instance.new("LocalScript", G2L["4a"]);
+G2L["50"]["Name"] = [[Animate]];
+
+
+-- StarterGui.Hold The Cap.Frame.Buttons.yt.LocalScript
+G2L["51"] = Instance.new("LocalScript", G2L["4a"]);
+
+
+
+-- StarterGui.Hold The Cap.Frame.CodeSample
+G2L["52"] = Instance.new("TextBox", G2L["2"]);
+G2L["52"]["Interactable"] = false;
+G2L["52"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["52"]["BorderSizePixel"] = 0;
+G2L["52"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["52"]["TextWrapped"] = true;
+G2L["52"]["TextSize"] = 16;
+G2L["52"]["Name"] = [[CodeSample]];
+G2L["52"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["52"]["TextScaled"] = true;
+G2L["52"]["BackgroundColor3"] = Color3.fromRGB(19, 19, 28);
+G2L["52"]["FontFace"] = Font.new([[rbxasset://fonts/families/Balthazar.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["52"]["MultiLine"] = true;
+G2L["52"]["ClearTextOnFocus"] = false;
+G2L["52"]["Size"] = UDim2.new(0.70588, 0, 0.58, 0);
+G2L["52"]["Position"] = UDim2.new(0.29412, 0, 0.08, 0);
+G2L["52"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["52"]["Text"] = [[]];
+
+
+-- StarterGui.Hold The Cap.Frame.CodeSample.Color
+G2L["53"] = Instance.new("LocalScript", G2L["52"]);
+G2L["53"]["Name"] = [[Color]];
+
+
+-- StarterGui.Hold The Cap.Frame.CodeSample.UITextSizeConstraint
+G2L["54"] = Instance.new("UITextSizeConstraint", G2L["52"]);
+G2L["54"]["MaxTextSize"] = 16;
+G2L["54"]["MinTextSize"] = 15;
+
+
+-- StarterGui.Hold The Cap.Frame.CodeSample.Anim
+G2L["55"] = Instance.new("LocalScript", G2L["52"]);
+G2L["55"]["Name"] = [[Anim]];
+
+
+-- StarterGui.Hold The Cap.Frame.Main
+G2L["56"] = Instance.new("LocalScript", G2L["2"]);
+G2L["56"]["Name"] = [[Main]];
+
+
+-- StarterGui.Hold The Cap.Frame.resizer
+G2L["57"] = Instance.new("Frame", G2L["2"]);
+G2L["57"]["SizeConstraint"] = Enum.SizeConstraint.RelativeXX;
+G2L["57"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["57"]["ClipsDescendants"] = true;
+G2L["57"]["Size"] = UDim2.new(0.07059, 0, 24.064, 0);
+G2L["57"]["Position"] = UDim2.new(0.92941, 0, 0.872, 0);
+G2L["57"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["57"]["Name"] = [[resizer]];
+G2L["57"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.Hold The Cap.Frame.resizer.dragger
+G2L["58"] = Instance.new("ImageButton", G2L["57"]);
+G2L["58"]["BorderSizePixel"] = 0;
+G2L["58"]["BackgroundColor3"] = Color3.fromRGB(255, 86, 0);
+G2L["58"]["ZIndex"] = 2;
+G2L["58"]["Size"] = UDim2.new(1.9, 0, 0.04338, 0);
+G2L["58"]["BackgroundTransparency"] = 1;
+G2L["58"]["Name"] = [[dragger]];
+G2L["58"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+
+
+-- StarterGui.Hold The Cap.Frame.resizer.dragger.UICorner
+G2L["59"] = Instance.new("UICorner", G2L["58"]);
+G2L["59"]["CornerRadius"] = UDim.new(0.5, 0);
+
+
+-- StarterGui.Hold The Cap.Frame.reziserMain
+G2L["5a"] = Instance.new("LocalScript", G2L["2"]);
+G2L["5a"]["Name"] = [[reziserMain]];
+
+
+-- StarterGui.Hold The Cap.Frame.resizerModule
+G2L["5b"] = Instance.new("ModuleScript", G2L["2"]);
+G2L["5b"]["Name"] = [[resizerModule]];
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes
+G2L["5c"] = Instance.new("ScrollingFrame", G2L["2"]);
+G2L["5c"]["Active"] = true;
+G2L["5c"]["BorderSizePixel"] = 0;
+G2L["5c"]["CanvasSize"] = UDim2.new(9999, 9999, 9999, 9999);
+G2L["5c"]["ElasticBehavior"] = Enum.ElasticBehavior.Always;
+G2L["5c"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["5c"]["Name"] = [[Remotes]];
+G2L["5c"]["ScrollBarImageTransparency"] = 1;
+G2L["5c"]["HorizontalScrollBarInset"] = Enum.ScrollBarInset.Always;
+G2L["5c"]["AnchorPoint"] = Vector2.new(0, 0.5);
+G2L["5c"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
+G2L["5c"]["Size"] = UDim2.new(0.29412, 0, 0.92, 0);
+G2L["5c"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5c"]["Position"] = UDim2.new(0, 0, 0.54, 0);
+G2L["5c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5c"]["ScrollBarThickness"] = 0;
+G2L["5c"]["LayoutOrder"] = 1;
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.UIPadding
+G2L["5d"] = Instance.new("UIPadding", G2L["5c"]);
+G2L["5d"]["PaddingTop"] = UDim.new(0, 10);
+G2L["5d"]["PaddingLeft"] = UDim.new(0, 10);
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.Infoupdts
+G2L["5e"] = Instance.new("TextButton", G2L["5c"]);
+G2L["5e"]["TextWrapped"] = true;
+G2L["5e"]["BorderSizePixel"] = 0;
+G2L["5e"]["TextSize"] = 14;
+G2L["5e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5e"]["TextScaled"] = true;
+G2L["5e"]["BackgroundColor3"] = Color3.fromRGB(25, 25, 25);
+G2L["5e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
+G2L["5e"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["5e"]["Size"] = UDim2.new(0, 100, 0, 22);
+G2L["5e"]["BackgroundTransparency"] = 0.8;
+G2L["5e"]["Name"] = [[Infoupdts]];
+G2L["5e"]["BorderColor3"] = Color3.fromRGB(94, 97, 103);
+G2L["5e"]["Text"] = [[Info & updts]];
+G2L["5e"]["Position"] = UDim2.new(0.45248, 0, 0.32273, 0);
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.Infoupdts.border
+G2L["5f"] = Instance.new("Frame", G2L["5e"]);
+G2L["5f"]["BorderSizePixel"] = 0;
+G2L["5f"]["BackgroundColor3"] = Color3.fromRGB(0, 171, 255);
+G2L["5f"]["Size"] = UDim2.new(0.04, 0, 1, 0);
+G2L["5f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5f"]["Name"] = [[border]];
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.Infoupdts.UITextSizeConstraint
+G2L["60"] = Instance.new("UITextSizeConstraint", G2L["5e"]);
+G2L["60"]["MaxTextSize"] = 17;
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.Infoupdts.Animate
+G2L["61"] = Instance.new("LocalScript", G2L["5e"]);
+G2L["61"]["Name"] = [[Animate]];
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.Infoupdts.UIStroke
+G2L["62"] = Instance.new("UIStroke", G2L["5e"]);
+G2L["62"]["Transparency"] = 0.5;
+G2L["62"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["62"]["Color"] = Color3.fromRGB(0, 171, 255);
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.Infoupdts.Function
+G2L["63"] = Instance.new("LocalScript", G2L["5e"]);
+G2L["63"]["Name"] = [[Function]];
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.Remote1
+G2L["64"] = Instance.new("TextButton", G2L["5c"]);
+G2L["64"]["TextWrapped"] = true;
+G2L["64"]["BorderSizePixel"] = 0;
+G2L["64"]["TextSize"] = 14;
+G2L["64"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["64"]["TextScaled"] = true;
+G2L["64"]["BackgroundColor3"] = Color3.fromRGB(25, 25, 25);
+G2L["64"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
+G2L["64"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["64"]["Size"] = UDim2.new(0, 100, 0, 22);
+G2L["64"]["BackgroundTransparency"] = 0.8;
+G2L["64"]["Name"] = [[Remote1]];
+G2L["64"]["BorderColor3"] = Color3.fromRGB(94, 97, 103);
+G2L["64"]["Text"] = [[RemoteName]];
+G2L["64"]["Visible"] = false;
+G2L["64"]["Position"] = UDim2.new(2.328, 0, 0.81304, 0);
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.Remote1.border
+G2L["65"] = Instance.new("Frame", G2L["64"]);
+G2L["65"]["BorderSizePixel"] = 0;
+G2L["65"]["BackgroundColor3"] = Color3.fromRGB(0, 171, 255);
+G2L["65"]["Size"] = UDim2.new(0.04, 0, 1, 0);
+G2L["65"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["65"]["Name"] = [[border]];
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.Remote1.UITextSizeConstraint
+G2L["66"] = Instance.new("UITextSizeConstraint", G2L["64"]);
+G2L["66"]["MaxTextSize"] = 14;
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.Remote1.Animate
+G2L["67"] = Instance.new("LocalScript", G2L["64"]);
+G2L["67"]["Name"] = [[Animate]];
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.Remote1.UIStroke
+G2L["68"] = Instance.new("UIStroke", G2L["64"]);
+G2L["68"]["Transparency"] = 0.5;
+G2L["68"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["68"]["Color"] = Color3.fromRGB(0, 171, 255);
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.Remote2
+G2L["69"] = Instance.new("TextButton", G2L["5c"]);
+G2L["69"]["TextWrapped"] = true;
+G2L["69"]["BorderSizePixel"] = 0;
+G2L["69"]["TextSize"] = 14;
+G2L["69"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["69"]["TextScaled"] = true;
+G2L["69"]["BackgroundColor3"] = Color3.fromRGB(25, 25, 25);
+G2L["69"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
+G2L["69"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["69"]["Size"] = UDim2.new(0, 100, 0, 22);
+G2L["69"]["BackgroundTransparency"] = 0.8;
+G2L["69"]["Name"] = [[Remote2]];
+G2L["69"]["BorderColor3"] = Color3.fromRGB(94, 97, 103);
+G2L["69"]["Text"] = [[RemoteName]];
+G2L["69"]["Visible"] = false;
+G2L["69"]["Position"] = UDim2.new(2.328, 0, 0.81304, 0);
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.Remote2.border
+G2L["6a"] = Instance.new("Frame", G2L["69"]);
+G2L["6a"]["BorderSizePixel"] = 0;
+G2L["6a"]["BackgroundColor3"] = Color3.fromRGB(0, 171, 255);
+G2L["6a"]["Size"] = UDim2.new(0.04, 0, 1, 0);
+G2L["6a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6a"]["Name"] = [[border]];
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.Remote2.UITextSizeConstraint
+G2L["6b"] = Instance.new("UITextSizeConstraint", G2L["69"]);
+G2L["6b"]["MaxTextSize"] = 14;
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.Remote2.Animate
+G2L["6c"] = Instance.new("LocalScript", G2L["69"]);
+G2L["6c"]["Name"] = [[Animate]];
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.Remote2.UIStroke
+G2L["6d"] = Instance.new("UIStroke", G2L["69"]);
+G2L["6d"]["Transparency"] = 0.5;
+G2L["6d"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["6d"]["Color"] = Color3.fromRGB(0, 171, 255);
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.Remote3
+G2L["6e"] = Instance.new("TextButton", G2L["5c"]);
+G2L["6e"]["TextWrapped"] = true;
+G2L["6e"]["BorderSizePixel"] = 0;
+G2L["6e"]["TextSize"] = 14;
+G2L["6e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6e"]["TextScaled"] = true;
+G2L["6e"]["BackgroundColor3"] = Color3.fromRGB(25, 25, 25);
+G2L["6e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
+G2L["6e"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["6e"]["Size"] = UDim2.new(0, 100, 0, 22);
+G2L["6e"]["BackgroundTransparency"] = 0.8;
+G2L["6e"]["Name"] = [[Remote3]];
+G2L["6e"]["BorderColor3"] = Color3.fromRGB(94, 97, 103);
+G2L["6e"]["Text"] = [[RemoteName]];
+G2L["6e"]["Visible"] = false;
+G2L["6e"]["Position"] = UDim2.new(2.328, 0, 0.81304, 0);
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.Remote3.border
+G2L["6f"] = Instance.new("Frame", G2L["6e"]);
+G2L["6f"]["BorderSizePixel"] = 0;
+G2L["6f"]["BackgroundColor3"] = Color3.fromRGB(0, 171, 255);
+G2L["6f"]["Size"] = UDim2.new(0.04, 0, 1, 0);
+G2L["6f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6f"]["Name"] = [[border]];
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.Remote3.UITextSizeConstraint
+G2L["70"] = Instance.new("UITextSizeConstraint", G2L["6e"]);
+G2L["70"]["MaxTextSize"] = 14;
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.Remote3.Animate
+G2L["71"] = Instance.new("LocalScript", G2L["6e"]);
+G2L["71"]["Name"] = [[Animate]];
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.Remote3.UIStroke
+G2L["72"] = Instance.new("UIStroke", G2L["6e"]);
+G2L["72"]["Transparency"] = 0.5;
+G2L["72"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["72"]["Color"] = Color3.fromRGB(0, 171, 255);
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.Remote4
+G2L["73"] = Instance.new("TextButton", G2L["5c"]);
+G2L["73"]["TextWrapped"] = true;
+G2L["73"]["BorderSizePixel"] = 0;
+G2L["73"]["TextSize"] = 14;
+G2L["73"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["73"]["TextScaled"] = true;
+G2L["73"]["BackgroundColor3"] = Color3.fromRGB(25, 25, 25);
+G2L["73"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
+G2L["73"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["73"]["Size"] = UDim2.new(0, 100, 0, 22);
+G2L["73"]["BackgroundTransparency"] = 0.8;
+G2L["73"]["Name"] = [[Remote4]];
+G2L["73"]["BorderColor3"] = Color3.fromRGB(94, 97, 103);
+G2L["73"]["Text"] = [[RemoteName]];
+G2L["73"]["Visible"] = false;
+G2L["73"]["Position"] = UDim2.new(2.328, 0, 0.81304, 0);
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.Remote4.border
+G2L["74"] = Instance.new("Frame", G2L["73"]);
+G2L["74"]["BorderSizePixel"] = 0;
+G2L["74"]["BackgroundColor3"] = Color3.fromRGB(0, 171, 255);
+G2L["74"]["Size"] = UDim2.new(0.04, 0, 1, 0);
+G2L["74"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["74"]["Name"] = [[border]];
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.Remote4.UITextSizeConstraint
+G2L["75"] = Instance.new("UITextSizeConstraint", G2L["73"]);
+G2L["75"]["MaxTextSize"] = 14;
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.Remote4.Animate
+G2L["76"] = Instance.new("LocalScript", G2L["73"]);
+G2L["76"]["Name"] = [[Animate]];
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.Remote4.UIStroke
+G2L["77"] = Instance.new("UIStroke", G2L["73"]);
+G2L["77"]["Transparency"] = 0.5;
+G2L["77"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["77"]["Color"] = Color3.fromRGB(0, 171, 255);
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.Remote5
+G2L["78"] = Instance.new("TextButton", G2L["5c"]);
+G2L["78"]["TextWrapped"] = true;
+G2L["78"]["BorderSizePixel"] = 0;
+G2L["78"]["TextSize"] = 14;
+G2L["78"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["78"]["TextScaled"] = true;
+G2L["78"]["BackgroundColor3"] = Color3.fromRGB(25, 25, 25);
+G2L["78"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
+G2L["78"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["78"]["Size"] = UDim2.new(0, 100, 0, 22);
+G2L["78"]["BackgroundTransparency"] = 0.8;
+G2L["78"]["Name"] = [[Remote5]];
+G2L["78"]["BorderColor3"] = Color3.fromRGB(94, 97, 103);
+G2L["78"]["Text"] = [[RemoteName]];
+G2L["78"]["Visible"] = false;
+G2L["78"]["Position"] = UDim2.new(2.328, 0, 0.81304, 0);
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.Remote5.border
+G2L["79"] = Instance.new("Frame", G2L["78"]);
+G2L["79"]["BorderSizePixel"] = 0;
+G2L["79"]["BackgroundColor3"] = Color3.fromRGB(0, 171, 255);
+G2L["79"]["Size"] = UDim2.new(0.04, 0, 1, 0);
+G2L["79"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["79"]["Name"] = [[border]];
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.Remote5.UITextSizeConstraint
+G2L["7a"] = Instance.new("UITextSizeConstraint", G2L["78"]);
+G2L["7a"]["MaxTextSize"] = 14;
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.Remote5.Animate
+G2L["7b"] = Instance.new("LocalScript", G2L["78"]);
+G2L["7b"]["Name"] = [[Animate]];
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.Remote5.UIStroke
+G2L["7c"] = Instance.new("UIStroke", G2L["78"]);
+G2L["7c"]["Transparency"] = 0.5;
+G2L["7c"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["7c"]["Color"] = Color3.fromRGB(0, 171, 255);
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.Remote6
+G2L["7d"] = Instance.new("TextButton", G2L["5c"]);
+G2L["7d"]["TextWrapped"] = true;
+G2L["7d"]["BorderSizePixel"] = 0;
+G2L["7d"]["TextSize"] = 14;
+G2L["7d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7d"]["TextScaled"] = true;
+G2L["7d"]["BackgroundColor3"] = Color3.fromRGB(25, 25, 25);
+G2L["7d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
+G2L["7d"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["7d"]["Size"] = UDim2.new(0, 100, 0, 22);
+G2L["7d"]["BackgroundTransparency"] = 0.8;
+G2L["7d"]["Name"] = [[Remote6]];
+G2L["7d"]["BorderColor3"] = Color3.fromRGB(94, 97, 103);
+G2L["7d"]["Text"] = [[RemoteName]];
+G2L["7d"]["Visible"] = false;
+G2L["7d"]["Position"] = UDim2.new(2.328, 0, 0.81304, 0);
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.Remote6.border
+G2L["7e"] = Instance.new("Frame", G2L["7d"]);
+G2L["7e"]["BorderSizePixel"] = 0;
+G2L["7e"]["BackgroundColor3"] = Color3.fromRGB(0, 171, 255);
+G2L["7e"]["Size"] = UDim2.new(0.04, 0, 1, 0);
+G2L["7e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7e"]["Name"] = [[border]];
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.Remote6.UITextSizeConstraint
+G2L["7f"] = Instance.new("UITextSizeConstraint", G2L["7d"]);
+G2L["7f"]["MaxTextSize"] = 14;
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.Remote6.Animate
+G2L["80"] = Instance.new("LocalScript", G2L["7d"]);
+G2L["80"]["Name"] = [[Animate]];
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.Remote6.UIStroke
+G2L["81"] = Instance.new("UIStroke", G2L["7d"]);
+G2L["81"]["Transparency"] = 0.5;
+G2L["81"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["81"]["Color"] = Color3.fromRGB(0, 171, 255);
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.Remote8
+G2L["82"] = Instance.new("TextButton", G2L["5c"]);
+G2L["82"]["TextWrapped"] = true;
+G2L["82"]["BorderSizePixel"] = 0;
+G2L["82"]["TextSize"] = 14;
+G2L["82"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["82"]["TextScaled"] = true;
+G2L["82"]["BackgroundColor3"] = Color3.fromRGB(25, 25, 25);
+G2L["82"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
+G2L["82"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["82"]["Size"] = UDim2.new(0, 100, 0, 22);
+G2L["82"]["BackgroundTransparency"] = 0.8;
+G2L["82"]["Name"] = [[Remote8]];
+G2L["82"]["BorderColor3"] = Color3.fromRGB(94, 97, 103);
+G2L["82"]["Text"] = [[RemoteName]];
+G2L["82"]["Visible"] = false;
+G2L["82"]["Position"] = UDim2.new(2.328, 0, 0.81304, 0);
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.Remote8.border
+G2L["83"] = Instance.new("Frame", G2L["82"]);
+G2L["83"]["BorderSizePixel"] = 0;
+G2L["83"]["BackgroundColor3"] = Color3.fromRGB(0, 171, 255);
+G2L["83"]["Size"] = UDim2.new(0.04, 0, 1, 0);
+G2L["83"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["83"]["Name"] = [[border]];
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.Remote8.UITextSizeConstraint
+G2L["84"] = Instance.new("UITextSizeConstraint", G2L["82"]);
+G2L["84"]["MaxTextSize"] = 14;
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.Remote8.Animate
+G2L["85"] = Instance.new("LocalScript", G2L["82"]);
+G2L["85"]["Name"] = [[Animate]];
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.Remote8.UIStroke
+G2L["86"] = Instance.new("UIStroke", G2L["82"]);
+G2L["86"]["Transparency"] = 0.5;
+G2L["86"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["86"]["Color"] = Color3.fromRGB(0, 171, 255);
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.Remote9
+G2L["87"] = Instance.new("TextButton", G2L["5c"]);
+G2L["87"]["TextWrapped"] = true;
+G2L["87"]["BorderSizePixel"] = 0;
+G2L["87"]["TextSize"] = 14;
+G2L["87"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["87"]["TextScaled"] = true;
+G2L["87"]["BackgroundColor3"] = Color3.fromRGB(25, 25, 25);
+G2L["87"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
+G2L["87"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["87"]["Size"] = UDim2.new(0, 100, 0, 22);
+G2L["87"]["BackgroundTransparency"] = 0.8;
+G2L["87"]["Name"] = [[Remote9]];
+G2L["87"]["BorderColor3"] = Color3.fromRGB(94, 97, 103);
+G2L["87"]["Text"] = [[RemoteName]];
+G2L["87"]["Visible"] = false;
+G2L["87"]["Position"] = UDim2.new(2.328, 0, 0.81304, 0);
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.Remote9.border
+G2L["88"] = Instance.new("Frame", G2L["87"]);
+G2L["88"]["BorderSizePixel"] = 0;
+G2L["88"]["BackgroundColor3"] = Color3.fromRGB(0, 171, 255);
+G2L["88"]["Size"] = UDim2.new(0.04, 0, 1, 0);
+G2L["88"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["88"]["Name"] = [[border]];
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.Remote9.UITextSizeConstraint
+G2L["89"] = Instance.new("UITextSizeConstraint", G2L["87"]);
+G2L["89"]["MaxTextSize"] = 14;
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.Remote9.Animate
+G2L["8a"] = Instance.new("LocalScript", G2L["87"]);
+G2L["8a"]["Name"] = [[Animate]];
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.Remote9.UIStroke
+G2L["8b"] = Instance.new("UIStroke", G2L["87"]);
+G2L["8b"]["Transparency"] = 0.5;
+G2L["8b"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["8b"]["Color"] = Color3.fromRGB(0, 171, 255);
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.Remote10
+G2L["8c"] = Instance.new("TextButton", G2L["5c"]);
+G2L["8c"]["TextWrapped"] = true;
+G2L["8c"]["BorderSizePixel"] = 0;
+G2L["8c"]["TextSize"] = 14;
+G2L["8c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8c"]["TextScaled"] = true;
+G2L["8c"]["BackgroundColor3"] = Color3.fromRGB(25, 25, 25);
+G2L["8c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
+G2L["8c"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["8c"]["Size"] = UDim2.new(0, 100, 0, 22);
+G2L["8c"]["BackgroundTransparency"] = 0.8;
+G2L["8c"]["Name"] = [[Remote10]];
+G2L["8c"]["BorderColor3"] = Color3.fromRGB(94, 97, 103);
+G2L["8c"]["Text"] = [[RemoteName]];
+G2L["8c"]["Visible"] = false;
+G2L["8c"]["Position"] = UDim2.new(2.328, 0, 0.81304, 0);
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.Remote10.border
+G2L["8d"] = Instance.new("Frame", G2L["8c"]);
+G2L["8d"]["BorderSizePixel"] = 0;
+G2L["8d"]["BackgroundColor3"] = Color3.fromRGB(0, 171, 255);
+G2L["8d"]["Size"] = UDim2.new(0.04, 0, 1, 0);
+G2L["8d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8d"]["Name"] = [[border]];
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.Remote10.UITextSizeConstraint
+G2L["8e"] = Instance.new("UITextSizeConstraint", G2L["8c"]);
+G2L["8e"]["MaxTextSize"] = 14;
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.Remote10.Animate
+G2L["8f"] = Instance.new("LocalScript", G2L["8c"]);
+G2L["8f"]["Name"] = [[Animate]];
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.Remote10.UIStroke
+G2L["90"] = Instance.new("UIStroke", G2L["8c"]);
+G2L["90"]["Transparency"] = 0.5;
+G2L["90"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["90"]["Color"] = Color3.fromRGB(0, 171, 255);
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.RemoteExample
+G2L["91"] = Instance.new("TextButton", G2L["5c"]);
+G2L["91"]["TextWrapped"] = true;
+G2L["91"]["BorderSizePixel"] = 0;
+G2L["91"]["TextSize"] = 14;
+G2L["91"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["91"]["TextScaled"] = true;
+G2L["91"]["BackgroundColor3"] = Color3.fromRGB(25, 25, 25);
+G2L["91"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
+G2L["91"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["91"]["Size"] = UDim2.new(0, 100, 0, 22);
+G2L["91"]["BackgroundTransparency"] = 0.8;
+G2L["91"]["Name"] = [[RemoteExample]];
+G2L["91"]["BorderColor3"] = Color3.fromRGB(94, 97, 103);
+G2L["91"]["Text"] = [[RemoteName]];
+G2L["91"]["Visible"] = false;
+G2L["91"]["Position"] = UDim2.new(2.328, 0, 0.81304, 0);
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.RemoteExample.border
+G2L["92"] = Instance.new("Frame", G2L["91"]);
+G2L["92"]["BorderSizePixel"] = 0;
+G2L["92"]["BackgroundColor3"] = Color3.fromRGB(0, 171, 255);
+G2L["92"]["Size"] = UDim2.new(0.04, 0, 1, 0);
+G2L["92"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["92"]["Name"] = [[border]];
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.RemoteExample.UITextSizeConstraint
+G2L["93"] = Instance.new("UITextSizeConstraint", G2L["91"]);
+G2L["93"]["MaxTextSize"] = 14;
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.RemoteExample.Animate
+G2L["94"] = Instance.new("LocalScript", G2L["91"]);
+G2L["94"]["Name"] = [[Animate]];
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.RemoteExample.UIStroke
+G2L["95"] = Instance.new("UIStroke", G2L["91"]);
+G2L["95"]["Transparency"] = 0.5;
+G2L["95"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["95"]["Color"] = Color3.fromRGB(0, 171, 255);
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.Remote7
+G2L["96"] = Instance.new("TextButton", G2L["5c"]);
+G2L["96"]["TextWrapped"] = true;
+G2L["96"]["BorderSizePixel"] = 0;
+G2L["96"]["TextSize"] = 14;
+G2L["96"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["96"]["TextScaled"] = true;
+G2L["96"]["BackgroundColor3"] = Color3.fromRGB(25, 25, 25);
+G2L["96"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
+G2L["96"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["96"]["Size"] = UDim2.new(0, 100, 0, 22);
+G2L["96"]["BackgroundTransparency"] = 0.8;
+G2L["96"]["Name"] = [[Remote7]];
+G2L["96"]["BorderColor3"] = Color3.fromRGB(94, 97, 103);
+G2L["96"]["Text"] = [[RemoteName]];
+G2L["96"]["Visible"] = false;
+G2L["96"]["Position"] = UDim2.new(2.328, 0, 0.81304, 0);
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.Remote7.border
+G2L["97"] = Instance.new("Frame", G2L["96"]);
+G2L["97"]["BorderSizePixel"] = 0;
+G2L["97"]["BackgroundColor3"] = Color3.fromRGB(0, 171, 255);
+G2L["97"]["Size"] = UDim2.new(0.04, 0, 1, 0);
+G2L["97"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["97"]["Name"] = [[border]];
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.Remote7.UITextSizeConstraint
+G2L["98"] = Instance.new("UITextSizeConstraint", G2L["96"]);
+G2L["98"]["MaxTextSize"] = 14;
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.Remote7.Animate
+G2L["99"] = Instance.new("LocalScript", G2L["96"]);
+G2L["99"]["Name"] = [[Animate]];
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.Remote7.UIStroke
+G2L["9a"] = Instance.new("UIStroke", G2L["96"]);
+G2L["9a"]["Transparency"] = 0.5;
+G2L["9a"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["9a"]["Color"] = Color3.fromRGB(0, 171, 255);
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.Remote11
+G2L["9b"] = Instance.new("TextButton", G2L["5c"]);
+G2L["9b"]["TextWrapped"] = true;
+G2L["9b"]["BorderSizePixel"] = 0;
+G2L["9b"]["TextSize"] = 14;
+G2L["9b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9b"]["TextScaled"] = true;
+G2L["9b"]["BackgroundColor3"] = Color3.fromRGB(25, 25, 25);
+G2L["9b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
+G2L["9b"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["9b"]["Size"] = UDim2.new(0, 100, 0, 22);
+G2L["9b"]["BackgroundTransparency"] = 0.8;
+G2L["9b"]["Name"] = [[Remote11]];
+G2L["9b"]["BorderColor3"] = Color3.fromRGB(94, 97, 103);
+G2L["9b"]["Text"] = [[RemoteName]];
+G2L["9b"]["Visible"] = false;
+G2L["9b"]["Position"] = UDim2.new(2.328, 0, 0.81304, 0);
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.Remote11.border
+G2L["9c"] = Instance.new("Frame", G2L["9b"]);
+G2L["9c"]["BorderSizePixel"] = 0;
+G2L["9c"]["BackgroundColor3"] = Color3.fromRGB(0, 171, 255);
+G2L["9c"]["Size"] = UDim2.new(0.04, 0, 1, 0);
+G2L["9c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9c"]["Name"] = [[border]];
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.Remote11.UITextSizeConstraint
+G2L["9d"] = Instance.new("UITextSizeConstraint", G2L["9b"]);
+G2L["9d"]["MaxTextSize"] = 14;
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.Remote11.Animate
+G2L["9e"] = Instance.new("LocalScript", G2L["9b"]);
+G2L["9e"]["Name"] = [[Animate]];
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.Remote11.UIStroke
+G2L["9f"] = Instance.new("UIStroke", G2L["9b"]);
+G2L["9f"]["Transparency"] = 0.5;
+G2L["9f"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["9f"]["Color"] = Color3.fromRGB(0, 171, 255);
+
+
+-- StarterGui.Hold The Cap.Frame.Remotes.UIListLayout
+G2L["a0"] = Instance.new("UIListLayout", G2L["5c"]);
+G2L["a0"]["Padding"] = UDim.new(0, 5);
+G2L["a0"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+
+-- StarterGui.Hold The Cap.Frame.UIDrag
+G2L["a1"] = Instance.new("LocalScript", G2L["2"]);
+G2L["a1"]["Name"] = [[UIDrag]];
+
+
+-- StarterGui.Hold The Cap.Frame.UIDrag
+G2L["a2"] = Instance.new("LocalScript", G2L["2"]);
+G2L["a2"]["Name"] = [[UIDrag]];
+
+
+-- Require G2L wrapper
+local G2L_REQUIRE = require;
+local G2L_MODULES = {};
+local function require(Module:ModuleScript)
+    local ModuleState = G2L_MODULES[Module];
+    if ModuleState then
+        if not ModuleState.Required then
+            ModuleState.Required = true;
+            ModuleState.Value = ModuleState.Closure();
+        end
+        return ModuleState.Value;
+    end;
+    return G2L_REQUIRE(Module);
+end
+
+G2L_MODULES[G2L["5b"]] = {
+Closure = function()
+    local script = G2L["5b"];local module = {}
+
+local mouse = game.Players.LocalPlayer:GetMouse()
+
+local DRAGGER_SIZE = 30
+local DRAGGER_TRANSPARENCY = .5
+
+local dragging = false
+
+function module.makeResizable(obj:GuiObject, minSize)
+	
+	local resizer = script.Parent.resizer:Clone()
+	local dragger = resizer.dragger
+	
+	resizer.Size = UDim2.fromOffset(DRAGGER_SIZE, DRAGGER_SIZE)
+	resizer.Position = UDim2.new(1, -DRAGGER_SIZE, 1, -DRAGGER_SIZE)
+	
+	local duic = dragger.UICorner
+	minSize = minSize or Vector2.new(160, 90)
+	
+	local startDrag, startSize
+	local gui = obj:FindFirstAncestorWhichIsA("ScreenGui")
+	resizer.Parent = obj
+
+	local function finishResize(tr)
+		dragger.Position = UDim2.new(0,0,0,0)
+		dragger.Size = UDim2.new(2,0,2,0)
+		dragger.Parent = resizer
+		dragger.BackgroundTransparency = tr
+		duic.Parent = dragger
+		startDrag = nil
+	end
+	dragger.MouseButton1Down:Connect(function()
+		if not startDrag then
+			startSize = obj.AbsoluteSize			
+			startDrag = Vector2.new(mouse.X, mouse.Y)
+			dragger.BackgroundTransparency = 1
+			dragger.Size = UDim2.fromOffset(gui.AbsoluteSize.X, gui.AbsoluteSize.Y)
+			dragger.Position = UDim2.new(0,0,0,0)
+			duic.Parent = nil
+			dragger.Parent = gui
+		end
+	end)	
+	dragger.MouseMoved:Connect(function()
+		local TweenService = game:GetService("TweenService")
+		local tweenInfo = TweenInfo.new(1, Enum.EasingStyle.Quint, Enum.EasingDirection.Out)
+
+		if startDrag then
+			local m = Vector2.new(mouse.X, mouse.Y)
+			local mouseMoved = Vector2.new(m.X - startDrag.X, m.Y - startDrag.Y)
+
+			local s = startSize + mouseMoved
+			local sx = math.max(minSize.X, s.X)
+			local sy = math.max(minSize.Y, s.Y)
+
+			local targetSize = UDim2.fromOffset(sx, sy)
+
+			-- Cria e executa o Tween para suavizar o ajuste de tamanho
+			local tween = TweenService:Create(obj, tweenInfo, { Size = targetSize })
+			tween:Play()
+		end
+	end)
+	dragger.MouseEnter:Connect(function()
+		finishResize(DRAGGER_TRANSPARENCY)				
+	end)
+	dragger.MouseLeave:Connect(function()
+		finishResize(1)
+	end)		
+	dragger.MouseButton1Up:Connect(function()
+		finishResize(DRAGGER_TRANSPARENCY)
+	end)	
+end
+
+function module.makeDraggable(obj)
+	local UIS = game:GetService("UserInputService")
+	local dragInput, dragStart
+	local startPos = obj.Position 
+	local dragger = obj	
+	local function updateInput(input)
+		local offset = input.Position - dragStart
+		local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + offset.X, startPos.Y.Scale, startPos.Y.Offset + offset.Y)
+		game:GetService("TweenService"):Create(obj, TweenInfo.new(.50, Enum.EasingStyle.Sine, Enum.EasingDirection.Out), {Position = Position}):Play()
+	end
+	dragger.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and not UIS:GetFocusedTextBox() then
+			dragging = true
+			dragStart = input.Position
+			startPos = obj.Position
+			module.dragged = obj
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	dragger.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	UIS.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			updateInput(input)
+		end
+	end)
+end
+
+return module
+
+end;
+};
+-- StarterGui.Hold The Cap.Frame.TopBar.Name.LocalScript
+local function C_7()
+local script = G2L["7"];
+	local TweenService = game:GetService("TweenService")
+	local textLabel = script.Parent
+	
+	local redColor = Color3.fromRGB(60, 255, 0)
+	local normalColor = textLabel.TextColor3
+	
+	local tweenInfo = TweenInfo.new(
+		1,
+		Enum.EasingStyle.Quad,
+		Enum.EasingDirection.Out,
+		0,
+		false,
+		0
+	)
+	
+	local function changeColorToRedAndBack()
+		local tweenToRed = TweenService:Create(textLabel, tweenInfo, {TextColor3 = redColor})
+		tweenToRed:Play()
+	
+		tweenToRed.Completed:Connect(function()
+			local tweenBack = TweenService:Create(textLabel, tweenInfo, {TextColor3 = normalColor})
+			tweenBack:Play()
+		end)
+	end
+	
+	changeColorToRedAndBack()
+	
+end;
+task.spawn(C_7);
+-- StarterGui.Hold The Cap.Frame.TopBar.V3.LocalScript
+local function C_a()
+local script = G2L["a"];
+	local TweenService = game:GetService("TweenService")
+	local textLabel = script.Parent
+	
+	local redColor = Color3.fromRGB(255, 0, 0)
+	local normalColor = textLabel.TextColor3
+	
+	local tweenInfo = TweenInfo.new(
+		1,
+		Enum.EasingStyle.Quad,
+		Enum.EasingDirection.Out,
+		0,
+		false,
+		0
+	)
+	
+	local function changeColorToRedAndBack()
+		local tweenToRed = TweenService:Create(textLabel, tweenInfo, {TextColor3 = redColor})
+		tweenToRed:Play()
+	
+		tweenToRed.Completed:Connect(function()
+			local tweenBack = TweenService:Create(textLabel, tweenInfo, {TextColor3 = normalColor})
+			tweenBack:Play()
+		end)
+	end
+	
+	changeColorToRedAndBack()
+	
+end;
+task.spawn(C_a);
+-- StarterGui.Hold The Cap.Frame.TopBar.V3.mobile
+local function C_b()
+local script = G2L["b"];
+	local UserInputService = game:GetService("UserInputService")
+	
+	if UserInputService.TouchEnabled then
+		script.Parent.Text = "V3 Mobile"
+		script.Parent.Position = UDim2.new(0.179, 0, 0, 0)
+	else
+	
+	end
+	
+end;
+task.spawn(C_b);
+-- StarterGui.Hold The Cap.Frame.Buttons.CopyR.Animate
+local function C_13()
+local script = G2L["13"];
+	local tweenService = game:GetService("TweenService")
+	
+	local button = script.Parent
+	local border = button:WaitForChild("Border", 10)
+	
+	local uistroke = button:FindFirstChildWhichIsA("UIStroke")
+	
+	button.MouseEnter:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0}):Play()
+	end)
+	
+	button.MouseLeave:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0.5}):Play()
+	end)
+	
+	button.MouseButton1Down:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(1, 0, 1, 0),
+		}):Play()
+		
+		wait(2)
+		
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+	button.MouseButton1Up:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+end;
+task.spawn(C_13);
+-- StarterGui.Hold The Cap.Frame.Buttons.CopyC.Animate
+local function C_1a()
+local script = G2L["1a"];
+	local tweenService = game:GetService("TweenService")
+	
+	local button = script.Parent
+	local border = button:WaitForChild("Border", 10)
+	
+	local uistroke = button:FindFirstChildWhichIsA("UIStroke")
+	
+	button.MouseEnter:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0}):Play()
+	end)
+	
+	button.MouseLeave:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0.5}):Play()
+	end)
+	
+	button.MouseButton1Down:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(1, 0, 1, 0),
+		}):Play()
+		
+		wait(2)
+		
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+	button.MouseButton1Up:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+end;
+task.spawn(C_1a);
+-- StarterGui.Hold The Cap.Frame.Buttons.CopyC.LocalScript
+local function C_1b()
+local script = G2L["1b"];
+	local ab = script.Parent.Parent.Parent.CodeSample
+	local c = ab.Text
+	script.Parent.MouseButton1Click:Connect(function()
+		if setclipboard then
+			setclipboard(ab.Text)
+			ab.Text = "Copied to clipboard"
+		else
+			ab.Text = "Your executer doesn't support clipboard"
+		end
+	end)
+end;
+task.spawn(C_1b);
+-- StarterGui.Hold The Cap.Frame.Buttons.Run.Animate
+local function C_22()
+local script = G2L["22"];
+	local tweenService = game:GetService("TweenService")
+	
+	local button = script.Parent
+	local border = button:WaitForChild("Border", 10)
+	
+	local uistroke = button:FindFirstChildWhichIsA("UIStroke")
+	
+	button.MouseEnter:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0}):Play()
+	end)
+	
+	button.MouseLeave:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0.5}):Play()
+	end)
+	
+	button.MouseButton1Down:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(1, 0, 1, 0),
+		}):Play()
+		
+		wait(2)
+		
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+	button.MouseButton1Up:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+end;
+task.spawn(C_22);
+-- StarterGui.Hold The Cap.Frame.Buttons.Clear.Animate
+local function C_29()
+local script = G2L["29"];
+	local tweenService = game:GetService("TweenService")
+	
+	local button = script.Parent
+	local border = button:WaitForChild("Border", 10)
+	
+	local uistroke = button:FindFirstChildWhichIsA("UIStroke")
+	
+	button.MouseEnter:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0}):Play()
+	end)
+	
+	button.MouseLeave:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0.5}):Play()
+	end)
+	
+	button.MouseButton1Down:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(1, 0, 1, 0),
+		}):Play()
+		
+		wait(2)
+		
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+	button.MouseButton1Up:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+end;
+task.spawn(C_29);
+-- StarterGui.Hold The Cap.Frame.Buttons.RunS.Animate
+local function C_32()
+local script = G2L["32"];
+	local tweenService = game:GetService("TweenService")
+	
+	local button = script.Parent
+	local border = button:WaitForChild("Border", 10)
+	
+	local uistroke = button:FindFirstChildWhichIsA("UIStroke")
+	
+	button.MouseEnter:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0}):Play()
+	end)
+	
+	button.MouseLeave:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0.5}):Play()
+	end)
+	
+	button.MouseButton1Down:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(1, 0, 1, 0),
+		}):Play()
+		
+		wait(2)
+		
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+	button.MouseButton1Up:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+end;
+task.spawn(C_32);
+-- StarterGui.Hold The Cap.Frame.Buttons.RunS.LocalScript
+local function C_33()
+local script = G2L["33"];
+	local ab = script.Parent.Parent.Parent.CodeSample
+	
+	script.Parent.MouseButton1Click:Connect(function()
+			local code = ab.Text
+	
+			if code ~= "" then
+				local success, result = pcall(function()
+					local func = loadstring(code)
+					if func then
+						func()
+					end
+				end)
+	
+				if not success then
+				end
+			else
+		end
+	end)
+end;
+task.spawn(C_33);
+-- StarterGui.Hold The Cap.Frame.Buttons.dc.Animate
+local function C_3a()
+local script = G2L["3a"];
+	local tweenService = game:GetService("TweenService")
+	
+	local button = script.Parent
+	local border = button:WaitForChild("Border", 10)
+	
+	local uistroke = button:FindFirstChildWhichIsA("UIStroke")
+	
+	button.MouseEnter:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0}):Play()
+	end)
+	
+	button.MouseLeave:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0.5}):Play()
+	end)
+	
+	button.MouseButton1Down:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(1, 0, 1, 0),
+		}):Play()
+		
+		wait(2)
+		
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+	button.MouseButton1Up:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+end;
+task.spawn(C_3a);
+-- StarterGui.Hold The Cap.Frame.Buttons.dc.LocalScript
+local function C_3b()
+local script = G2L["3b"];
+	local ab = script.Parent.Parent.Parent.CodeSample
+	local c = "https://dsc.gg/cheater2k"
+	script.Parent.MouseButton1Click:Connect(function()
+		if setclipboard then
+			setclipboard(c)
+			ab.Text = "Copied to clipboard!"
+		else
+			ab.Text = "Your executer doesn't support clipboard"
+		end
+	end)
+end;
+task.spawn(C_3b);
+-- StarterGui.Hold The Cap.Frame.Buttons.ClearL.Animate
+local function C_42()
+local script = G2L["42"];
+	local tweenService = game:GetService("TweenService")
+	
+	local button = script.Parent
+	local border = button:WaitForChild("Border", 10)
+	
+	local uistroke = button:FindFirstChildWhichIsA("UIStroke")
+	
+	button.MouseEnter:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0}):Play()
+	end)
+	
+	button.MouseLeave:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0.5}):Play()
+	end)
+	
+	button.MouseButton1Down:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(1, 0, 1, 0),
+		}):Play()
+		
+		wait(2)
+		
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+	button.MouseButton1Up:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+end;
+task.spawn(C_42);
+-- StarterGui.Hold The Cap.Frame.Buttons.ExL.Animate
+local function C_49()
+local script = G2L["49"];
+	local tweenService = game:GetService("TweenService")
+	
+	local button = script.Parent
+	local border = button:WaitForChild("Border", 10)
+	
+	local uistroke = button:FindFirstChildWhichIsA("UIStroke")
+	
+	button.MouseEnter:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0}):Play()
+	end)
+	
+	button.MouseLeave:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0.5}):Play()
+	end)
+	
+	button.MouseButton1Down:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(1, 0, 1, 0),
+		}):Play()
+		
+		wait(2)
+		
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+	button.MouseButton1Up:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+end;
+task.spawn(C_49);
+-- StarterGui.Hold The Cap.Frame.Buttons.yt.Animate
+local function C_50()
+local script = G2L["50"];
+	local tweenService = game:GetService("TweenService")
+	
+	local button = script.Parent
+	local border = button:WaitForChild("Border", 10)
+	
+	local uistroke = button:FindFirstChildWhichIsA("UIStroke")
+	
+	button.MouseEnter:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0}):Play()
+	end)
+	
+	button.MouseLeave:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0.5}):Play()
+	end)
+	
+	button.MouseButton1Down:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(1, 0, 1, 0),
+		}):Play()
+		
+		wait(2)
+		
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+	button.MouseButton1Up:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+end;
+task.spawn(C_50);
+-- StarterGui.Hold The Cap.Frame.Buttons.yt.LocalScript
+local function C_51()
+local script = G2L["51"];
+	local ab = script.Parent.Parent.Parent.CodeSample
+	local c = "https://www.youtube.com/@omaganameMag-7-K"
+	script.Parent.MouseButton1Click:Connect(function()
+		if setclipboard then
+			setclipboard(c)
+			ab.Text = "Copied to clipboard!"
+		else
+			ab.Text = "Your executer doesn't support clipboard"
+		end
+	end)
+end;
+task.spawn(C_51);
+-- StarterGui.Hold The Cap.Frame.CodeSample.Color
+local function C_53()
+local script = G2L["53"];
+	local textBox = script.Parent
+	local TweenService = game:GetService("TweenService")
+	local colors = {
+		Color3.fromRGB(255, 0, 0),
+		Color3.fromRGB(0, 255, 0),
+		Color3.fromRGB(255, 255, 0),
+		Color3.fromRGB(255, 0, 255),
+		Color3.fromRGB(0, 255, 255),
+	}
+	
+	local interval = 0.5
+	local currentIndex = 1
+	
+	local function createTween(color)
+		local tweenInfo = TweenInfo.new(interval, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+		local goal = {TextColor3 = color}
+		return TweenService:Create(textBox, tweenInfo, goal)
+	end
+	
+	local function changeTextColor()
+		while true do
+			local tween = createTween(colors[currentIndex])
+			tween:Play()
+			tween.Completed:Wait()
+			currentIndex = currentIndex + 1
+			if currentIndex > #colors then
+				currentIndex = 1
+			end
+			wait(interval)
+		end
+	end
+	
+	changeTextColor()
+end;
+task.spawn(C_53);
+-- StarterGui.Hold The Cap.Frame.CodeSample.Anim
+local function C_55()
+local script = G2L["55"];
+	local textBox = script.Parent
+	local playerName = game.Players.LocalPlayer.DisplayName
+	local fullText = "Welcome " .. playerName .. "!"
+	local currentText = ""
+	local Load = "Loaded!"
+	local te = ""
+	for i = 1, #fullText do
+		te = te .. Load:sub(i, i)
+		textBox.Text = te
+		wait(0.09)
+	end
+	wait(3)
+	if textBox.Text ~= "Loaded!" then
+		
+	else
+	for i = 1, #fullText do
+		currentText = currentText .. fullText:sub(i, i)
+		textBox.Text = currentText
+		wait(0.1)
+	   end
+	end
+end;
+task.spawn(C_55);
+-- StarterGui.Hold The Cap.Frame.Main
+local function C_56()
+local script = G2L["56"];
+	local ReplicatedStorage = game:GetService("ReplicatedStorage")
+	local executedRemotes = {}
+	
+	local textbox = script.Parent.CodeSample
+	local buttons = script.Parent.Remotes
+	local button1 = buttons.Remote1
+	local button2 = buttons.Remote2
+	local button3 = buttons.Remote3
+	local button4 = buttons.Remote4
+	local button5 = buttons.Remote5
+	local button6 = buttons.Remote6
+	local button7 = buttons.Remote7
+	local button8 = buttons.Remote8
+	local button9 = buttons.Remote9
+	local button10 = buttons.Remote10
+	local button11 = buttons.Remote11
+	local runButton = script.Parent.Buttons.Run
+	local dup = script.Parent.Buttons.CopyR
+	local ExcludeLogs = script.Parent.Buttons.ClearL
+	local Excludermt = script.Parent.Buttons.ExL
+	
+	local buttonList = {button1, button2, button3, button4, button5, button6, button7, button8, button9, button10, button11}
+	local selectedRemote = nil
+	
+	local function generateCode(remote)
+		if remote:IsA("RemoteEvent") then
+			return string.format([[ 
+	local arg1 = "Txt" 
+	local arg2 = "Txt" 
+	
+	game:GetService('ReplicatedStorage').%s:FireServer(arg1, arg2)]], remote.Name)
+		elseif remote:IsA("RemoteFunction") then
+			return string.format([[ 
+	local arg1 = "Txt" 
+	local arg2 = "Txt" 
+	
+	local RemoteFunction = game:GetService('ReplicatedStorage').%s:InvokeServer(arg1, arg2)]], remote.Name)
+		end
+	end
+	
+	local function assignButton(remote, button)
+		if remote:IsA("RemoteEvent") then
+			button.Text = remote.Name
+			button.Visible = true
+			button.MouseButton1Click:Connect(function()
+				selectedRemote = remote
+				textbox.Text = generateCode(remote)
+			end)
+		else
+			button.Frame.BackgroundColor3 = Color3.fromRGB(255, 0, 255)
+			button.Text = remote.Name
+			button.Visible = true
+			button.MouseButton1Click:Connect(function()
+				selectedRemote = remote
+				textbox.Text = generateCode(remote)
+			end)
+		end
+	end
+	
+	local function processExecutedRemote(remote)
+		if executedRemotes[remote] then return end
+		executedRemotes[remote] = true
+	
+		local firstInvisibleButton = nil
+	
+		for _, button in ipairs(buttonList) do
+			if not button.Visible then
+				firstInvisibleButton = button
+				break
+			end
+		end
+	
+		if not firstInvisibleButton then
+			local newButton = button1:Clone()
+			newButton.Name = "Remote" .. #buttonList + 1
+			newButton.Parent = buttons
+			table.insert(buttonList, newButton)
+			firstInvisibleButton = newButton
+		end
+	
+		assignButton(remote, firstInvisibleButton)
+	end
+	
+	local function monitorRemotes()
+		for _, remote in ipairs(ReplicatedStorage:GetDescendants()) do
+			if remote:IsA("RemoteEvent") or remote:IsA("RemoteFunction") then
+				processExecutedRemote(remote)
+			end
+		end
+	
+		ReplicatedStorage.DescendantAdded:Connect(function(descendant)
+			if descendant:IsA("RemoteEvent") or descendant:IsA("RemoteFunction") then
+				processExecutedRemote(descendant)
+			end
+		end)
+	end
+	
+	monitorRemotes()
+	
+	runButton.MouseButton1Click:Connect(function()
+		if selectedRemote then
+			if selectedRemote:IsA("RemoteEvent") then
+				selectedRemote:FireServer()
+			elseif selectedRemote:IsA("RemoteFunction") then
+				selectedRemote:InvokeServer()
+			end
+			print(selectedRemote.Name .. " Fired!")
+		else
+			textbox.Text = "No remotes selected!"
+		end
+	end)
+	
+	dup.MouseButton1Click:Connect(function()
+		if selectedRemote then
+			local clonedRemote = selectedRemote:Clone()
+			clonedRemote.Parent = ReplicatedStorage
+		end
+	end)
+	
+	ExcludeLogs.MouseButton1Click:Connect(function()
+		if selectedRemote then
+			for _, button in ipairs(buttonList) do
+				if button.Text == selectedRemote.Name then
+					button.Text = ""
+					button.Visible = false
+					break
+				end
+			end
+		end
+	end)
+	
+	Excludermt.MouseButton1Click:Connect(function()
+		textbox.Text = "Deleting..."
+		wait(4)
+		if selectedRemote then
+			selectedRemote:Destroy()
+			textbox.Text = "Remote Deleted! (Use 'Clear Log' to remove from the list)"
+		else
+			textbox.Text = "No remote selected to delete!"
+		end
+	end)
+	
+	warn("{------------------------------}")
+	warn("     Made only by ._.kinzin     ")
+	warn("{------------------------------}")
+	
+end;
+task.spawn(C_56);
+-- StarterGui.Hold The Cap.Frame.reziserMain
+local function C_5a()
+local script = G2L["5a"];
+	local main = script.Parent
+	local resizerModule = require(main:WaitForChild("resizerModule", 10))
+	
+	resizerModule.makeResizable(main)
+end;
+task.spawn(C_5a);
+-- StarterGui.Hold The Cap.Frame.Remotes.Infoupdts.Animate
+local function C_61()
+local script = G2L["61"];
+	local tweenService = game:GetService("TweenService")
+	
+	local button = script.Parent
+	local border = button:WaitForChild("border", 10)
+	
+	local uistroke = button:FindFirstChildWhichIsA("UIStroke")
+	
+	button.MouseEnter:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0}):Play()
+	end)
+	
+	button.MouseLeave:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0.5}):Play()
+	end)
+	
+	button.MouseButton1Down:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(1, 0, 1, 0),
+		}):Play()
+		
+		wait(2)
+		
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+	button.MouseButton1Up:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+end;
+task.spawn(C_61);
+-- StarterGui.Hold The Cap.Frame.Remotes.Infoupdts.Function
+local function C_63()
+local script = G2L["63"];
+	local a = script.Parent.Parent.Parent.CodeSample
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		a.Text = [[
+	-- Welcome to V3!	
+	-- Made by ._.kinzin on discord.
+	-- Huge thanks to deusferrinho for the UI.
+	-- Enjoy playing with remotes!
+	]]
+	end)
+end;
+task.spawn(C_63);
+-- StarterGui.Hold The Cap.Frame.Remotes.Remote1.Animate
+local function C_67()
+local script = G2L["67"];
+	local tweenService = game:GetService("TweenService")
+	
+	local button = script.Parent
+	local border = button:WaitForChild("border", 10)
+	
+	local uistroke = button:FindFirstChildWhichIsA("UIStroke")
+	
+	button.MouseEnter:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0}):Play()
+	end)
+	
+	button.MouseLeave:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0.5}):Play()
+	end)
+	
+	button.MouseButton1Down:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(1, 0, 1, 0),
+		}):Play()
+		
+		wait(2)
+		
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+	button.MouseButton1Up:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+end;
+task.spawn(C_67);
+-- StarterGui.Hold The Cap.Frame.Remotes.Remote2.Animate
+local function C_6c()
+local script = G2L["6c"];
+	local tweenService = game:GetService("TweenService")
+	
+	local button = script.Parent
+	local border = button:WaitForChild("border", 10)
+	
+	local uistroke = button:FindFirstChildWhichIsA("UIStroke")
+	
+	button.MouseEnter:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0}):Play()
+	end)
+	
+	button.MouseLeave:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0.5}):Play()
+	end)
+	
+	button.MouseButton1Down:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(1, 0, 1, 0),
+		}):Play()
+		
+		wait(2)
+		
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+	button.MouseButton1Up:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+end;
+task.spawn(C_6c);
+-- StarterGui.Hold The Cap.Frame.Remotes.Remote3.Animate
+local function C_71()
+local script = G2L["71"];
+	local tweenService = game:GetService("TweenService")
+	
+	local button = script.Parent
+	local border = button:WaitForChild("border", 10)
+	
+	local uistroke = button:FindFirstChildWhichIsA("UIStroke")
+	
+	button.MouseEnter:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0}):Play()
+	end)
+	
+	button.MouseLeave:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0.5}):Play()
+	end)
+	
+	button.MouseButton1Down:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(1, 0, 1, 0),
+		}):Play()
+		
+		wait(2)
+		
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+	button.MouseButton1Up:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+end;
+task.spawn(C_71);
+-- StarterGui.Hold The Cap.Frame.Remotes.Remote4.Animate
+local function C_76()
+local script = G2L["76"];
+	local tweenService = game:GetService("TweenService")
+	
+	local button = script.Parent
+	local border = button:WaitForChild("border", 10)
+	
+	local uistroke = button:FindFirstChildWhichIsA("UIStroke")
+	
+	button.MouseEnter:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0}):Play()
+	end)
+	
+	button.MouseLeave:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0.5}):Play()
+	end)
+	
+	button.MouseButton1Down:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(1, 0, 1, 0),
+		}):Play()
+		
+		wait(2)
+		
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+	button.MouseButton1Up:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+end;
+task.spawn(C_76);
+-- StarterGui.Hold The Cap.Frame.Remotes.Remote5.Animate
+local function C_7b()
+local script = G2L["7b"];
+	local tweenService = game:GetService("TweenService")
+	
+	local button = script.Parent
+	local border = button:WaitForChild("border", 10)
+	
+	local uistroke = button:FindFirstChildWhichIsA("UIStroke")
+	
+	button.MouseEnter:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0}):Play()
+	end)
+	
+	button.MouseLeave:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0.5}):Play()
+	end)
+	
+	button.MouseButton1Down:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(1, 0, 1, 0),
+		}):Play()
+		
+		wait(2)
+		
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+	button.MouseButton1Up:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+end;
+task.spawn(C_7b);
+-- StarterGui.Hold The Cap.Frame.Remotes.Remote6.Animate
+local function C_80()
+local script = G2L["80"];
+	local tweenService = game:GetService("TweenService")
+	
+	local button = script.Parent
+	local border = button:WaitForChild("border", 10)
+	
+	local uistroke = button:FindFirstChildWhichIsA("UIStroke")
+	
+	button.MouseEnter:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0}):Play()
+	end)
+	
+	button.MouseLeave:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0.5}):Play()
+	end)
+	
+	button.MouseButton1Down:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(1, 0, 1, 0),
+		}):Play()
+		
+		wait(2)
+		
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+	button.MouseButton1Up:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+end;
+task.spawn(C_80);
+-- StarterGui.Hold The Cap.Frame.Remotes.Remote8.Animate
+local function C_85()
+local script = G2L["85"];
+	local tweenService = game:GetService("TweenService")
+	
+	local button = script.Parent
+	local border = button:WaitForChild("border", 10)
+	
+	local uistroke = button:FindFirstChildWhichIsA("UIStroke")
+	
+	button.MouseEnter:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0}):Play()
+	end)
+	
+	button.MouseLeave:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0.5}):Play()
+	end)
+	
+	button.MouseButton1Down:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(1, 0, 1, 0),
+		}):Play()
+		
+		wait(2)
+		
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+	button.MouseButton1Up:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+end;
+task.spawn(C_85);
+-- StarterGui.Hold The Cap.Frame.Remotes.Remote9.Animate
+local function C_8a()
+local script = G2L["8a"];
+	local tweenService = game:GetService("TweenService")
+	
+	local button = script.Parent
+	local border = button:WaitForChild("border", 10)
+	
+	local uistroke = button:FindFirstChildWhichIsA("UIStroke")
+	
+	button.MouseEnter:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0}):Play()
+	end)
+	
+	button.MouseLeave:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0.5}):Play()
+	end)
+	
+	button.MouseButton1Down:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(1, 0, 1, 0),
+		}):Play()
+		
+		wait(2)
+		
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+	button.MouseButton1Up:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+end;
+task.spawn(C_8a);
+-- StarterGui.Hold The Cap.Frame.Remotes.Remote10.Animate
+local function C_8f()
+local script = G2L["8f"];
+	local tweenService = game:GetService("TweenService")
+	
+	local button = script.Parent
+	local border = button:WaitForChild("border", 10)
+	
+	local uistroke = button:FindFirstChildWhichIsA("UIStroke")
+	
+	button.MouseEnter:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0}):Play()
+	end)
+	
+	button.MouseLeave:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0.5}):Play()
+	end)
+	
+	button.MouseButton1Down:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(1, 0, 1, 0),
+		}):Play()
+		
+		wait(2)
+		
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+	button.MouseButton1Up:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+end;
+task.spawn(C_8f);
+-- StarterGui.Hold The Cap.Frame.Remotes.RemoteExample.Animate
+local function C_94()
+local script = G2L["94"];
+	local tweenService = game:GetService("TweenService")
+	
+	local button = script.Parent
+	local border = button:WaitForChild("border", 10)
+	
+	local uistroke = button:FindFirstChildWhichIsA("UIStroke")
+	
+	button.MouseEnter:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0}):Play()
+	end)
+	
+	button.MouseLeave:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0.5}):Play()
+	end)
+	
+	button.MouseButton1Down:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(1, 0, 1, 0),
+		}):Play()
+		
+		wait(2)
+		
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+	button.MouseButton1Up:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+end;
+task.spawn(C_94);
+-- StarterGui.Hold The Cap.Frame.Remotes.Remote7.Animate
+local function C_99()
+local script = G2L["99"];
+	local tweenService = game:GetService("TweenService")
+	
+	local button = script.Parent
+	local border = button:WaitForChild("border", 10)
+	
+	local uistroke = button:FindFirstChildWhichIsA("UIStroke")
+	
+	button.MouseEnter:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0}):Play()
+	end)
+	
+	button.MouseLeave:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0.5}):Play()
+	end)
+	
+	button.MouseButton1Down:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(1, 0, 1, 0),
+		}):Play()
+		
+		wait(2)
+		
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+	button.MouseButton1Up:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+end;
+task.spawn(C_99);
+-- StarterGui.Hold The Cap.Frame.Remotes.Remote11.Animate
+local function C_9e()
+local script = G2L["9e"];
+	local tweenService = game:GetService("TweenService")
+	
+	local button = script.Parent
+	local border = button:WaitForChild("border", 10)
+	
+	local uistroke = button:FindFirstChildWhichIsA("UIStroke")
+	
+	button.MouseEnter:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0}):Play()
+	end)
+	
+	button.MouseLeave:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0.5}):Play()
+	end)
+	
+	button.MouseButton1Down:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(1, 0, 1, 0),
+		}):Play()
+		
+		wait(2)
+		
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+	button.MouseButton1Up:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+end;
+task.spawn(C_9e);
+-- StarterGui.Hold The Cap.Frame.UIDrag
+local function C_a1()
+local script = G2L["a1"];
+	local screenGui = script.Parent
+	local guiElement = screenGui:WaitForChild("GuiElement")
+	local UserInputService = game:GetService("UserInputService")
+	
+	local dragging = false
+	local startPos, startGuiPos
+	
+	local function startDrag(input)
+		dragging = true
+		startPos = input.Position
+		startGuiPos = guiElement.Position
+	end
+	
+	local function updateDrag(input)
+		if dragging then
+			local delta = input.Position - startPos
+			guiElement.Position = UDim2.new(startGuiPos.X.Scale, startGuiPos.X.Offset + delta.X, startGuiPos.Y.Scale, startGuiPos.Y.Offset + delta.Y)
+		end
+	end
+	
+	local function endDrag()
+		dragging = false
+	end
+	
+	guiElement.InputBegan:Connect(function(input, gameProcessed)
+		if not gameProcessed then
+			if input.UserInputType == Enum.UserInputType.Touch then
+				startDrag(input)
+			end
+		end
+	end)
+	
+	guiElement.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.Touch then
+			updateDrag(input)
+		end
+	end)
+	
+	guiElement.InputEnded:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.Touch then
+			endDrag()
+		end
+	end)
+	
+end;
+task.spawn(C_a1);
+-- StarterGui.Hold The Cap.Frame.UIDrag
+local function C_a2()
+local script = G2L["a2"];
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+end;
+task.spawn(C_a2);
+
+return G2L["1"], require;
