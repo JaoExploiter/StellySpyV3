@@ -1,3 +1,4 @@
+{--------------------------------}
 Updates Logs:
 
 (03/01/25) 1.01:
@@ -7,3 +8,4 @@ Fixed some bugs and errors.
 Added a New button "Fire or Invoke All" (Fire or invoke all remotes in the game)
 Fixed a error: "Wrong script path"
 Fixed a error in mobile support.
+{--------------------------------}
