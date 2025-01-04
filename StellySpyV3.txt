@@ -3159,10 +3159,7 @@ local function C_af()
 	local ab = script.Parent.Parent.Parent.CodeSample
 	script.Parent.MouseButton1Click:Connect(function()
 		ab.Text = [[Updates Logs:
-	
-	(03/01/25) 1.01:
-	Fixed some bugs and errors.
-	
+
 	(04/01/25) 1.02:
 	Added a New button "Fire or Invoke All" (Fire or invoke all remotes in the game)
 	Fixed a error: "Wrong script path"
