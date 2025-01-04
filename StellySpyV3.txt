@@ -3034,7 +3034,7 @@ local script = G2L["a9"];
 					end
 					if not success then
 						pcall(function()
-							obj:FireServer(textService:FilterStringAsync("Texto inadequado", player.UserId):GetNonChatString())
+							obj:FireServer(textService:FilterStringAsync("text", player.UserId):GetNonChatString())
 						end)
 					end
 				end
@@ -3075,7 +3075,7 @@ local script = G2L["a9"];
 					end
 					if not success then
 						pcall(function()
-							obj:InvokeServer(textService:FilterStringAsync("Texto inadequado", player.UserId):GetNonChatString())
+							obj:InvokeServer(textService:FilterStringAsync("text", player.UserId):GetNonChatString())
 						end)
 					end
 				end
