@@ -8,4 +8,12 @@ Fixed some bugs and errors.
 Added a New button "Fire or Invoke All" (Fire or invoke all remotes in the game)
 Fixed a error: "Wrong script path"
 Fixed a error in mobile support.
+
+(06/01/25) 1.03:
+Added a New button "Atack Remote" (He fires the remote no matter what. info: you can get kicked.")
+Fixed a error in the "Fire all remotes".
+
+(16/01/25) 1.03.1:
+i fixed the discord link
+
 {--------------------------------}
