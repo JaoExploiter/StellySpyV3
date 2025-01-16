@@ -3156,7 +3156,7 @@ task.spawn(C_9a);
 local function C_9b()
 	local script = G2L["9b"];
 	local ab = script.Parent.Parent.Parent.CodeSample
-	local c = "https://dsc.gg/cheater2k"
+	local c = "https://discord.gg/WaBQTy7TwT"
 	script.Parent.MouseButton1Click:Connect(function()
 		if setclipboard then
 			setclipboard(c)
