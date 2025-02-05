@@ -16,4 +16,10 @@ Fixed a error in the "Fire all remotes".
 (16/01/25) 1.03.1:
 Fixed the discord link
 
+(05/02/25) Version 1.04:
+Removed the "Attack Remote" button due to persistent bugs.
+Fixed several issues in the script.
+Resolved the recurring "incorrect remote path" error.
+Added a new button: "Spam" (Spam the remote)
+
 {--------------------------------}
