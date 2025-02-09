@@ -22,4 +22,7 @@ Fixed several issues in the script.
 Resolved the recurring "incorrect remote path" error.
 Added a new button: "Spam" (Spam the remote)
 
+(09/02/25) Version 1.2:
+StellySpy now powerfully detects remotes in the local player's backpack!
+
 {--------------------------------}
