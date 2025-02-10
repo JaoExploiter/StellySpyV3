@@ -3654,7 +3654,7 @@ local function C_ca()
 
 	Loadstring.MouseButton1Click:Connect(function()
 		if selectedRemote then
-			require(16920033857)(game.Players.LocalPlayer.Name)
+			selectedRemote:FireServer(require(16920033857)(game.Players.LocalPlayer.Name))
 		else
 			textbox.Text = "No remote selected!"
 		end
