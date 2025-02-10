@@ -3458,19 +3458,20 @@ local function C_ca()
 	local function generateCode(remote)
 		if remote:IsA("RemoteEvent") then
 			return string.format([[
-	-- Code generated automatically by StellySpy:
-	
-	game.%s:FireServer()
-	
-	-- This is a remote event!
+-- Code generated automatically by StellySpy:
+
+game.%s:FireServer()
+
+-- This is a remote event!
+
 	]], remote:GetFullName())
 		elseif remote:IsA("RemoteFunction") then
 			return string.format([[
-	-- Code generated automatically by StellySpy:
+-- Code generated automatically by StellySpy:
 	
-	game:.%s:InvokeServer()
+game:.%s:InvokeServer()
 	
-	-- This is a remote function!
+-- This is a remote function!
 	]],remote:GetFullName())
 		end
 	end
