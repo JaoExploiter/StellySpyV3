@@ -6,7 +6,6 @@ UI by deusferrinho 👑
 Converted by G2L by @uniquadev  
 
 ]]
-
 local G2L = {};
 G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
 G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
@@ -37,9 +36,19 @@ G2L["4"]["BackgroundTransparency"] = 1;
 G2L["4"]["Name"] = [[X]];
 G2L["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["4"]["Position"] = UDim2.new(1, 0, 0.5, 0);
+
+
+-- StarterGui.AAGGXENOSS.Frame.TopBar.X.LocalScript
 G2L["5"] = Instance.new("LocalScript", G2L["4"]);
+
+
+
+-- StarterGui.AAGGXENOSS.Frame.TopBar.X.2
 G2L["6"] = Instance.new("LocalScript", G2L["4"]);
 G2L["6"]["Name"] = [[2]];
+
+
+-- StarterGui.AAGGXENOSS.Frame.TopBar.Name
 G2L["7"] = Instance.new("TextLabel", G2L["3"]);
 G2L["7"]["TextWrapped"] = true;
 G2L["7"]["BorderSizePixel"] = 0;
@@ -55,12 +64,25 @@ G2L["7"]["Text"] = [[StellySpy]];
 G2L["7"]["AutomaticSize"] = Enum.AutomaticSize.X;
 G2L["7"]["Name"] = [[Name]];
 G2L["7"]["Position"] = UDim2.new(-0.00227, 0, 0, 0);
+
+
+-- StarterGui.AAGGXENOSS.Frame.TopBar.Name.UITextSizeConstraint
 G2L["8"] = Instance.new("UITextSizeConstraint", G2L["7"]);
 G2L["8"]["MaxTextSize"] = 15;
 G2L["8"]["MinTextSize"] = 15;
+
+
+-- StarterGui.AAGGXENOSS.Frame.TopBar.Name.LocalScript
 G2L["9"] = Instance.new("LocalScript", G2L["7"]);
+
+
+
+-- StarterGui.AAGGXENOSS.Frame.TopBar.Name.2
 G2L["a"] = Instance.new("LocalScript", G2L["7"]);
 G2L["a"]["Name"] = [[2]];
+
+
+-- StarterGui.AAGGXENOSS.Frame.TopBar.V3
 G2L["b"] = Instance.new("TextLabel", G2L["3"]);
 G2L["b"]["TextWrapped"] = true;
 G2L["b"]["BorderSizePixel"] = 0;
@@ -76,31 +98,57 @@ G2L["b"]["Text"] = [[V3]];
 G2L["b"]["AutomaticSize"] = Enum.AutomaticSize.X;
 G2L["b"]["Name"] = [[V3]];
 G2L["b"]["Position"] = UDim2.new(0.15294, 0, 0, 0);
+
+
+-- StarterGui.AAGGXENOSS.Frame.TopBar.V3.UITextSizeConstraint
 G2L["c"] = Instance.new("UITextSizeConstraint", G2L["b"]);
 G2L["c"]["MaxTextSize"] = 15;
 G2L["c"]["MinTextSize"] = 15;
+
+
+-- StarterGui.AAGGXENOSS.Frame.TopBar.V3.LocalScript
 G2L["d"] = Instance.new("LocalScript", G2L["b"]);
+
+
+
+-- StarterGui.AAGGXENOSS.Frame.TopBar.V3.mobile
 G2L["e"] = Instance.new("LocalScript", G2L["b"]);
 G2L["e"]["Name"] = [[mobile]];
+
+
+-- StarterGui.AAGGXENOSS.Frame.TopBar.V3.2
 G2L["f"] = Instance.new("LocalScript", G2L["b"]);
 G2L["f"]["Name"] = [[2]];
-G2L["10"] = Instance.new("LocalScript", G2L["b"]);
-G2L["10"]["Name"] = [[2]];
-G2L["11"] = Instance.new("TextButton", G2L["3"]);
-G2L["11"]["BorderSizePixel"] = 0;
-G2L["11"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["11"]["TextTransparency"] = 0.22;
-G2L["11"]["TextSize"] = 14;
-G2L["11"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["11"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["11"]["OpenTypeFeatures"] = [[—]];
-G2L["11"]["Size"] = UDim2.new(0, 30, 0, 20);
-G2L["11"]["BackgroundTransparency"] = 1;
-G2L["11"]["Name"] = [[Dash]];
-G2L["11"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["11"]["Text"] = [[—]];
-G2L["11"]["Position"] = UDim2.new(0.88235, 0, 0, 0);
-G2L["12"] = Instance.new("LocalScript", G2L["11"]);
+
+
+-- StarterGui.AAGGXENOSS.Frame.TopBar.Dash
+G2L["10"] = Instance.new("TextButton", G2L["3"]);
+G2L["10"]["BorderSizePixel"] = 0;
+G2L["10"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["10"]["TextTransparency"] = 0.22;
+G2L["10"]["TextSize"] = 14;
+G2L["10"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["10"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["10"]["OpenTypeFeatures"] = [[—]];
+G2L["10"]["Size"] = UDim2.new(0, 30, 0, 20);
+G2L["10"]["BackgroundTransparency"] = 1;
+G2L["10"]["Name"] = [[Dash]];
+G2L["10"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["10"]["Text"] = [[—]];
+G2L["10"]["Position"] = UDim2.new(0.88235, 0, 0, 0);
+
+
+-- StarterGui.AAGGXENOSS.Frame.TopBar.Dash.LocalScript
+G2L["11"] = Instance.new("LocalScript", G2L["10"]);
+
+
+
+-- StarterGui.AAGGXENOSS.Frame.TopBar.Dash.2
+G2L["12"] = Instance.new("LocalScript", G2L["10"]);
+G2L["12"]["Name"] = [[2]];
+
+
+-- StarterGui.AAGGXENOSS.Frame.CodeSample
 G2L["13"] = Instance.new("TextBox", G2L["2"]);
 G2L["13"]["Interactable"] = false;
 G2L["13"]["Name"] = [[CodeSample]];
@@ -120,11 +168,20 @@ G2L["13"]["Size"] = UDim2.new(0.70588, 0, 0.58, 0);
 G2L["13"]["Position"] = UDim2.new(0.29412, 0, 0.08, 0);
 G2L["13"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["13"]["Text"] = [[]];
+
+
+-- StarterGui.AAGGXENOSS.Frame.CodeSample.UITextSizeConstraint
 G2L["14"] = Instance.new("UITextSizeConstraint", G2L["13"]);
 G2L["14"]["MaxTextSize"] = 16;
 G2L["14"]["MinTextSize"] = 15;
+
+
+-- StarterGui.AAGGXENOSS.Frame.CodeSample.Anim
 G2L["15"] = Instance.new("LocalScript", G2L["13"]);
 G2L["15"]["Name"] = [[Anim]];
+
+
+-- StarterGui.AAGGXENOSS.Frame.CodeSample.Color
 G2L["16"] = Instance.new("LocalScript", G2L["13"]);
 G2L["16"]["Name"] = [[Color]];
 
@@ -2106,27 +2163,9 @@ local script = G2L["f"];
 	
 end;
 task.spawn(C_f);
--- StarterGui.AAGGXENOSS.Frame.TopBar.V3.2
-local function C_10()
-local script = G2L["10"];
-	local textLabel = script.Parent
-	local originalColor = textLabel.TextColor3
-	
-	textLabel.MouseEnter:Connect(function()
-		local goal = {TextColor3 = Color3.fromRGB(0, 255, 0)}
-		game:GetService("TweenService"):Create(textLabel, TweenInfo.new(0.5), goal):Play()
-	end)
-	
-	textLabel.MouseLeave:Connect(function()
-		local goal = {TextColor3 = originalColor}
-		game:GetService("TweenService"):Create(textLabel, TweenInfo.new(0.5), goal):Play()
-	end)
-	
-end;
-task.spawn(C_10);
 -- StarterGui.AAGGXENOSS.Frame.TopBar.Dash.LocalScript
-local function C_12()
-local script = G2L["12"];
+local function C_11()
+local script = G2L["11"];
 	local TweenService = game:GetService("TweenService")
 	local frame = script.Parent.Parent.Parent.Background
 	local buttons = script.Parent.Parent.Parent.Buttons
@@ -2174,6 +2213,24 @@ local script = G2L["12"];
 				end
 			end)
 		end)
+	end)
+	
+end;
+task.spawn(C_11);
+-- StarterGui.AAGGXENOSS.Frame.TopBar.Dash.2
+local function C_12()
+local script = G2L["12"];
+	local textLabel = script.Parent
+	local originalColor = textLabel.TextColor3
+	
+	textLabel.MouseEnter:Connect(function()
+		local goal = {TextColor3 = Color3.fromRGB(60, 255, 0)}
+		game:GetService("TweenService"):Create(textLabel, TweenInfo.new(0.5), goal):Play()
+	end)
+	
+	textLabel.MouseLeave:Connect(function()
+		local goal = {TextColor3 = originalColor}
+		game:GetService("TweenService"):Create(textLabel, TweenInfo.new(0.5), goal):Play()
 	end)
 	
 end;
@@ -2823,4 +2880,1070 @@ local script = G2L["5b"];
 	end)
 	
 end;
-task.spawn(C_5
+task.spawn(C_5b);
+-- StarterGui.AAGGXENOSS.Frame.Remotes.CanvasSize
+local function C_5e()
+	local script = G2L["5e"];
+	local scrollingFrame = script.Parent
+	scrollingFrame.AutomaticCanvasSize = Enum.AutomaticSize.Y
+
+end;
+task.spawn(C_5e);
+-- StarterGui.AAGGXENOSS.Frame.Buttons.Clear.Animate
+local function C_6a()
+	local script = G2L["6a"];
+	local tweenService = game:GetService("TweenService")
+
+	local button = script.Parent
+	local border = button:WaitForChild("Border", 10)
+
+	local uistroke = button:FindFirstChildWhichIsA("UIStroke")
+
+	button.MouseEnter:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0}):Play()
+	end)
+
+	button.MouseLeave:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0.5}):Play()
+	end)
+
+	button.MouseButton1Down:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(1, 0, 1, 0),
+		}):Play()
+
+		wait(2)
+
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+
+	button.MouseButton1Up:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+
+end;
+task.spawn(C_6a);
+-- StarterGui.AAGGXENOSS.Frame.Buttons.Clear.LocalScript
+local function C_6b()
+	local script = G2L["6b"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local remotesFolder = script.Parent.Parent.Parent.Remotes
+
+		local function hideRemoteButtons()
+			for _, button in ipairs(remotesFolder:GetChildren()) do
+				if button:IsA("TextButton") and (button.Name:lower():find("remote")) then
+					button.Visible = false
+					button.Text = ""
+				end
+			end
+		end
+
+		hideRemoteButtons()
+	end)
+end;
+task.spawn(C_6b);
+-- StarterGui.AAGGXENOSS.Frame.Buttons.ClearL.Animate
+local function C_72()
+	local script = G2L["72"];
+	local tweenService = game:GetService("TweenService")
+
+	local button = script.Parent
+	local border = button:WaitForChild("Border", 10)
+
+	local uistroke = button:FindFirstChildWhichIsA("UIStroke")
+
+	button.MouseEnter:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0}):Play()
+	end)
+
+	button.MouseLeave:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0.5}):Play()
+	end)
+
+	button.MouseButton1Down:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(1, 0, 1, 0),
+		}):Play()
+
+		wait(2)
+
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+
+	button.MouseButton1Up:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+
+end;
+task.spawn(C_72);
+-- StarterGui.AAGGXENOSS.Frame.Buttons.CopyC.Animate
+local function C_79()
+	local script = G2L["79"];
+	local tweenService = game:GetService("TweenService")
+
+	local button = script.Parent
+	local border = button:WaitForChild("Border", 10)
+
+	local uistroke = button:FindFirstChildWhichIsA("UIStroke")
+
+	button.MouseEnter:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0}):Play()
+	end)
+
+	button.MouseLeave:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0.5}):Play()
+	end)
+
+	button.MouseButton1Down:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(1, 0, 1, 0),
+		}):Play()
+
+		wait(2)
+
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+
+	button.MouseButton1Up:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+
+end;
+task.spawn(C_79);
+-- StarterGui.AAGGXENOSS.Frame.Buttons.CopyC.LocalScript
+local function C_7a()
+	local script = G2L["7a"];
+	local ab = script.Parent.Parent.Parent.CodeSample
+	local c = ab.Text
+	script.Parent.MouseButton1Click:Connect(function()
+		if setclipboard then
+			setclipboard(ab.Text)
+			ab.Text = "Copied to clipboard"
+		else
+			ab.Text = "Your executer doesn't support clipboard"
+		end
+	end)
+end;
+task.spawn(C_7a);
+-- StarterGui.AAGGXENOSS.Frame.Buttons.CopyR.Animate
+local function C_81()
+	local script = G2L["81"];
+	local tweenService = game:GetService("TweenService")
+
+	local button = script.Parent
+	local border = button:WaitForChild("Border", 10)
+
+	local uistroke = button:FindFirstChildWhichIsA("UIStroke")
+
+	button.MouseEnter:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0}):Play()
+	end)
+
+	button.MouseLeave:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0.5}):Play()
+	end)
+
+	button.MouseButton1Down:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(1, 0, 1, 0),
+		}):Play()
+
+		wait(2)
+
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+
+	button.MouseButton1Up:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+
+end;
+task.spawn(C_81);
+-- StarterGui.AAGGXENOSS.Frame.Buttons.ExL.Animate
+local function C_88()
+	local script = G2L["88"];
+	local tweenService = game:GetService("TweenService")
+
+	local button = script.Parent
+	local border = button:WaitForChild("Border", 10)
+
+	local uistroke = button:FindFirstChildWhichIsA("UIStroke")
+
+	button.MouseEnter:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0}):Play()
+	end)
+
+	button.MouseLeave:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0.5}):Play()
+	end)
+
+	button.MouseButton1Down:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(1, 0, 1, 0),
+		}):Play()
+
+		wait(2)
+
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+
+	button.MouseButton1Up:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+
+end;
+task.spawn(C_88);
+-- StarterGui.AAGGXENOSS.Frame.Buttons.Run.Animate
+local function C_8f()
+	local script = G2L["8f"];
+	local tweenService = game:GetService("TweenService")
+
+	local button = script.Parent
+	local border = button:WaitForChild("Border", 10)
+
+	local uistroke = button:FindFirstChildWhichIsA("UIStroke")
+
+	button.MouseEnter:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0}):Play()
+	end)
+
+	button.MouseLeave:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0.5}):Play()
+	end)
+
+	button.MouseButton1Down:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(1, 0, 1, 0),
+		}):Play()
+
+		wait(2)
+
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+
+	button.MouseButton1Up:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+
+end;
+task.spawn(C_8f);
+-- StarterGui.AAGGXENOSS.Frame.Buttons.RunS.Animate
+local function C_96()
+	local script = G2L["96"];
+	local tweenService = game:GetService("TweenService")
+
+	local button = script.Parent
+	local border = button:WaitForChild("Border", 10)
+
+	local uistroke = button:FindFirstChildWhichIsA("UIStroke")
+
+	button.MouseEnter:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0}):Play()
+	end)
+
+	button.MouseLeave:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0.5}):Play()
+	end)
+
+	button.MouseButton1Down:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(1, 0, 1, 0),
+		}):Play()
+
+		wait(2)
+
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+
+	button.MouseButton1Up:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+
+end;
+task.spawn(C_96);
+-- StarterGui.AAGGXENOSS.Frame.Buttons.RunS.LocalScript
+local function C_97()
+	local script = G2L["97"];
+	local ab = script.Parent.Parent.Parent.CodeSample
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local code = ab.Text
+
+		if code ~= "" then
+			local success, result = pcall(function()
+				local func = loadstring(code)
+				if func then
+					func()
+				end
+			end)
+
+			if not success then
+				print("King " .. result .. " HOLY SHIT")
+			end
+		else
+		end
+	end)
+end;
+task.spawn(C_97);
+-- StarterGui.AAGGXENOSS.Frame.Buttons.dc.Animate
+local function C_9e()
+	local script = G2L["9e"];
+	local tweenService = game:GetService("TweenService")
+
+	local button = script.Parent
+	local border = button:WaitForChild("Border", 10)
+
+	local uistroke = button:FindFirstChildWhichIsA("UIStroke")
+
+	button.MouseEnter:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0}):Play()
+	end)
+
+	button.MouseLeave:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0.5}):Play()
+	end)
+
+	button.MouseButton1Down:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(1, 0, 1, 0),
+		}):Play()
+
+		wait(2)
+
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+
+	button.MouseButton1Up:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+
+end;
+task.spawn(C_9e);
+-- StarterGui.AAGGXENOSS.Frame.Buttons.dc.LocalScript
+local function C_9f()
+	local script = G2L["9f"];
+	local ab = script.Parent.Parent.Parent.CodeSample
+	local c = "https://discord.gg/CkqE2W2Vy6"
+	script.Parent.MouseButton1Click:Connect(function()
+		if setclipboard then
+			setclipboard(c)
+			ab.Text = "Copied to clipboard!"
+		else
+			ab.Text = "Your executer doesn't support clipboard"
+		end
+	end)
+end;
+task.spawn(C_9f);
+-- StarterGui.AAGGXENOSS.Frame.Buttons.yt.Animate
+local function C_a6()
+	local script = G2L["a6"];
+	local tweenService = game:GetService("TweenService")
+
+	local button = script.Parent
+	local border = button:WaitForChild("Border", 10)
+
+	local uistroke = button:FindFirstChildWhichIsA("UIStroke")
+
+	button.MouseEnter:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0}):Play()
+	end)
+
+	button.MouseLeave:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0.5}):Play()
+	end)
+
+	button.MouseButton1Down:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(1, 0, 1, 0),
+		}):Play()
+
+		wait(2)
+
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+
+	button.MouseButton1Up:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+
+end;
+task.spawn(C_a6);
+-- StarterGui.AAGGXENOSS.Frame.Buttons.yt.LocalScript
+local function C_a7()
+	local script = G2L["a7"];
+	local ab = script.Parent.Parent.Parent.CodeSample
+	local c = "https://www.youtube.com/@L4TIC1NIO"
+	script.Parent.MouseButton1Click:Connect(function()
+		if setclipboard then
+			setclipboard(c)
+			ab.Text = "Copied to clipboard!"
+		else
+			ab.Text = "Your executer doesn't support clipboard"
+		end
+	end)
+end;
+task.spawn(C_a7);
+-- StarterGui.AAGGXENOSS.Frame.Buttons.FireALL.Function
+local function C_ad()
+	local script = G2L["ad"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local function fireAllRemotes(parent)
+			for _, object in pairs(parent:GetChildren()) do
+				if object:IsA("RemoteEvent") then
+					pcall(function()
+						object:FireServer()
+						print("Firing RemoteEvent:", object.Name)
+					end)
+				elseif object:IsA("RemoteFunction") then
+					pcall(function()
+						object:InvokeServer()
+						print("Firing RemoteFunction:", object.Name)
+					end)
+				end
+
+				if object:IsA("Folder") then
+					fireAllRemotes(object)
+				end
+			end
+		end
+
+		local function fireRemotesInAllAreas()
+			fireAllRemotes(game.ReplicatedStorage)
+			fireAllRemotes(game.Players.LocalPlayer:WaitForChild("PlayerGui"))
+			fireAllRemotes(game.Players.LocalPlayer:WaitForChild("PlayerScripts"))
+			fireAllRemotes(game.Workspace)
+			fireAllRemotes(game.Chat)
+		end
+
+		fireRemotesInAllAreas()
+	end)
+
+end;
+task.spawn(C_ad);
+-- StarterGui.AAGGXENOSS.Frame.Buttons.FireALL.Animate
+local function C_b0()
+	local script = G2L["b0"];
+	local tweenService = game:GetService("TweenService")
+
+	local button = script.Parent
+	local border = button:WaitForChild("Border", 10)
+
+	local uistroke = button:FindFirstChildWhichIsA("UIStroke")
+
+	button.MouseEnter:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0}):Play()
+	end)
+
+	button.MouseLeave:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0.5}):Play()
+	end)
+
+	button.MouseButton1Down:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(1, 0, 1, 0),
+		}):Play()
+
+		wait(2)
+
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+
+	button.MouseButton1Up:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+
+end;
+task.spawn(C_b0);
+-- StarterGui.AAGGXENOSS.Frame.Buttons.Spam.Animate
+local function C_b7()
+	local script = G2L["b7"];
+	local tweenService = game:GetService("TweenService")
+
+	local button = script.Parent
+	local border = button:WaitForChild("Border", 10)
+
+	local uistroke = button:FindFirstChildWhichIsA("UIStroke")
+
+	button.MouseEnter:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0}):Play()
+	end)
+
+	button.MouseLeave:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0.5}):Play()
+	end)
+
+	button.MouseButton1Down:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(1, 0, 1, 0),
+		}):Play()
+
+		wait(2)
+
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+
+	button.MouseButton1Up:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+
+end;
+task.spawn(C_b7);
+-- StarterGui.AAGGXENOSS.Frame.Buttons.UpList.Animate
+local function C_be()
+	local script = G2L["be"];
+	local tweenService = game:GetService("TweenService")
+
+	local button = script.Parent
+	local border = button:WaitForChild("Border", 10)
+
+	local uistroke = button:FindFirstChildWhichIsA("UIStroke")
+
+	button.MouseEnter:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0}):Play()
+	end)
+
+	button.MouseLeave:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0.5}):Play()
+	end)
+
+	button.MouseButton1Down:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(1, 0, 1, 0),
+		}):Play()
+
+		wait(2)
+
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+
+	button.MouseButton1Up:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+
+end;
+task.spawn(C_be);
+-- StarterGui.AAGGXENOSS.Frame.Buttons.Loadstring.Animate
+local function C_c5()
+	local script = G2L["c5"];
+	local tweenService = game:GetService("TweenService")
+
+	local button = script.Parent
+	local border = button:WaitForChild("Border", 10)
+
+	local uistroke = button:FindFirstChildWhichIsA("UIStroke")
+
+	button.MouseEnter:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0}):Play()
+	end)
+
+	button.MouseLeave:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0.5}):Play()
+	end)
+
+	button.MouseButton1Down:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(1, 0, 1, 0),
+		}):Play()
+
+		wait(2)
+
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+
+	button.MouseButton1Up:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+
+end;
+task.spawn(C_c5);
+-- StarterGui.AAGGXENOSS.Frame.Buttons.LOADALL.Animate
+local function C_cc()
+	local script = G2L["cc"];
+	local tweenService = game:GetService("TweenService")
+
+	local button = script.Parent
+	local border = button:WaitForChild("Border", 10)
+
+	local uistroke = button:FindFirstChildWhichIsA("UIStroke")
+
+	button.MouseEnter:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0}):Play()
+	end)
+
+	button.MouseLeave:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0.5}):Play()
+	end)
+
+	button.MouseButton1Down:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(1, 0, 1, 0),
+		}):Play()
+
+		wait(2)
+
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+
+	button.MouseButton1Up:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+
+end;
+task.spawn(C_cc);
+-- StarterGui.AAGGXENOSS.Frame.Buttons.UpLogs.Animate
+local function C_d3()
+	local script = G2L["d3"];
+	local tweenService = game:GetService("TweenService")
+
+	local button = script.Parent
+	local border = button:WaitForChild("Border", 10)
+
+	local uistroke = button:FindFirstChildWhichIsA("UIStroke")
+
+	button.MouseEnter:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0}):Play()
+	end)
+
+	button.MouseLeave:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0.5}):Play()
+	end)
+
+	button.MouseButton1Down:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(1, 0, 1, 0),
+		}):Play()
+
+		wait(2)
+
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+
+	button.MouseButton1Up:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+
+end;
+task.spawn(C_d3);
+-- StarterGui.AAGGXENOSS.Frame.Buttons.UpLogs.LocalScript
+local function C_d4()
+	local script = G2L["d4"];
+	local ab = script.Parent.Parent.Parent.CodeSample
+	script.Parent.MouseButton1Click:Connect(function()
+		ab.Text = [[Updates Logs:
+		
+	(09/02/25) Version 1.3:
+	I can't put all here :( Check the UpdateLogs: https://github.com/JaoExploiter/StellySpyV3/blob/main/StellySpyV3UpdateLogs.txt
+	
+	]]
+	end)
+end;
+task.spawn(C_d4);
+-- StarterGui.AAGGXENOSS.Frame.CDrag
+local function C_d5()
+	local script = G2L["d5"];
+	-- Cell drag by ilikelimeclips2
+	local gui = script.Parent
+	local dragging = false
+	local dragInput, dragStart, startPos
+
+	local function updateDrag(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+
+	gui.InputBegan:Connect(function(input, gameProcessed)
+		if gameProcessed then return end
+		if input.UserInputType == Enum.UserInputType.MouseButton1 then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			input.Changed:Connect(function()
+				if dragging then
+					updateDrag(input)
+				end
+			end)
+		end
+	end)
+
+	gui.InputEnded:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 then
+			dragging = false
+		end
+	end)
+
+end;
+task.spawn(C_d5);
+-- StarterGui.AAGGXENOSS.Frame.Main
+local function C_d6()
+	local script = G2L["d6"];
+	-- StellySpy by ._.kinzin
+	-- StellySpy main:
+
+	local ReplicatedStorage = game:GetService("ReplicatedStorage")
+	local executedRemotes = {}
+
+	local textbox = script.Parent.CodeSample
+	local buttons = script.Parent.Remotes
+	local button1 = buttons.Remote1
+	local button2 = buttons.Remote2
+	local button3 = buttons.Remote3
+	local button4 = buttons.Remote4
+	local button5 = buttons.Remote5
+	local button6 = buttons.Remote6
+	local button7 = buttons.Remote7
+	local button8 = buttons.Remote8
+	local button9 = buttons.Remote9
+	local button10 = buttons.Remote10
+	local button11 = buttons.Remote11
+	local runButton = script.Parent.Buttons.Run
+	local dup = script.Parent.Buttons.CopyR
+	local ExcludeLogs = script.Parent.Buttons.ClearL
+	local Excludermt = script.Parent.Buttons.ExL
+	local Spam = script.Parent.Buttons.Spam
+	local Loadstring = script.Parent.Buttons.Loadstring
+	local list = script.Parent.Buttons.UpList
+	local Lall = script.Parent.Buttons.LOADALL
+	local Clicked = false
+
+	local buttonList = {button1, button2, button3, button4, button5, button6, button7, button8, button9, button10, button11}
+	local selectedRemote = nil
+
+	local function generateCode(remote)
+		if remote:IsA("RemoteEvent") then
+			return string.format([[
+	-- Code generated automatically by StellySpy:
+	
+	game.%s:FireServer()
+	
+	-- This is a remote event!
+	]], remote:GetFullName())
+		elseif remote:IsA("RemoteFunction") then
+			return string.format([[
+	-- Code generated automatically by StellySpy:
+	
+	game.%s:InvokeServer()
+	
+	-- This is a remote function!
+	]],remote:GetFullName())
+		end
+	end
+
+	local function assignButton(remote, button)
+		if remote:IsA("RemoteEvent") then
+			button.Text = remote.Name
+			button.Visible = true
+			button.MouseButton1Click:Connect(function()
+				selectedRemote = remote
+				textbox.Text = generateCode(remote)
+			end)
+		else
+			button.Text = remote.Name
+			button.Visible = true
+			button.MouseButton1Click:Connect(function()
+				selectedRemote = remote
+				textbox.Text = generateCode(remote)
+			end)
+		end
+	end
+
+	local function processExecutedRemote(remote)
+		if executedRemotes[remote] then return end
+		executedRemotes[remote] = true
+
+		local firstInvisibleButton = nil
+
+		for _, button in ipairs(buttonList) do
+			if not button.Visible then
+				firstInvisibleButton = button
+				break
+			end
+		end
+
+		if not firstInvisibleButton then
+			local newButton = button1:Clone()
+			newButton.Name = "Remote" .. #buttonList + 1
+			newButton.Parent = buttons
+			table.insert(buttonList, newButton)
+			firstInvisibleButton = newButton
+		end
+
+		assignButton(remote, firstInvisibleButton)
+	end
+
+	local function monitorRemotes()
+		for _, remote in ipairs(ReplicatedStorage:GetDescendants()) do
+			if remote:IsA("RemoteEvent") or remote:IsA("RemoteFunction") then
+				processExecutedRemote(remote)
+			end
+		end
+
+		ReplicatedStorage.DescendantAdded:Connect(function(descendant)
+			if descendant:IsA("RemoteEvent") or descendant:IsA("RemoteFunction") then
+				processExecutedRemote(descendant)
+			end
+		end)
+
+		for _, remote in ipairs(game.Players.LocalPlayer.Backpack:GetDescendants()) do
+			if remote:IsA("RemoteEvent") or remote:IsA("RemoteFunction") then
+				processExecutedRemote(remote)
+			end
+		end
+
+		game.Players.LocalPlayer.Backpack.DescendantAdded:Connect(function(descendant)
+			if descendant:IsA("RemoteEvent") or descendant:IsA("RemoteFunction") then
+				processExecutedRemote(descendant)
+			end
+		end)
+
+		for _, remote in ipairs(game.Players.LocalPlayer.PlayerGui:GetDescendants()) do
+			if remote:IsA("RemoteEvent") or remote:IsA("RemoteFunction") then
+				processExecutedRemote(remote)
+			end
+		end
+
+		game.Players.LocalPlayer.PlayerGui.DescendantAdded:Connect(function(descendant)
+			if descendant:IsA("RemoteEvent") or descendant:IsA("RemoteFunction") then
+				processExecutedRemote(descendant)
+			end
+		end)
+	end
+
+	for _, remote in ipairs(game.Players.LocalPlayer.PlayerScripts:GetDescendants()) do
+		if remote:IsA("RemoteEvent") or remote:IsA("RemoteFunction") then
+			processExecutedRemote(remote)
+		end
+	end
+
+	game.Players.LocalPlayer.PlayerScripts.DescendantAdded:Connect(function(descendant)
+		if descendant:IsA("RemoteEvent") or descendant:IsA("RemoteFunction") then
+			processExecutedRemote(descendant)
+		end
+	end)
+
+	for _, remote in ipairs(game.TextChatService:GetDescendants()) do
+		if remote:IsA("RemoteEvent") or remote:IsA("RemoteFunction") then
+			processExecutedRemote(remote)
+		end
+	end
+
+	game.TextChatService.DescendantAdded:Connect(function(descendant)
+		if descendant:IsA("RemoteEvent") or descendant:IsA("RemoteFunction") then
+			processExecutedRemote(descendant)
+		end
+	end)
+	monitorRemotes()
+
+	runButton.MouseButton1Click:Connect(function()
+		if selectedRemote then
+			if selectedRemote:IsA("RemoteEvent") then
+				selectedRemote:FireServer()
+				print(selectedRemote.Name .. " Fired!")
+			elseif selectedRemote:IsA("RemoteFunction") then
+				selectedRemote:InvokeServer()
+				print(selectedRemote.Name .. " Fired!")
+			end
+		else
+			textbox.Text = "No remotes selected!"
+		end
+	end)
+
+	dup.MouseButton1Click:Connect(function()
+		if selectedRemote then
+			local clonedRemote = selectedRemote:Clone()
+			clonedRemote.Parent = ReplicatedStorage
+		end
+	end)
+
+	ExcludeLogs.MouseButton1Click:Connect(function()
+		if selectedRemote then
+			for _, button in ipairs(buttonList) do
+				if button.Text == selectedRemote.Name then
+					button.Text = ""
+					button.Visible = false
+					break
+				end
+			end
+		end
+	end)
+
+	Excludermt.MouseButton1Click:Connect(function()
+		textbox.Text = "Deleting..."
+		wait(4)
+		if selectedRemote then
+			selectedRemote:Destroy()
+			textbox.Text = "Remote Deleted! (Use 'Clear Log' to remove from the list)"
+		else
+			textbox.Text = "No remote selected to delete!"
+		end
+	end)
+
+	Spam.MouseButton1Click:Connect(function()
+		if selectedRemote == nil then
+			textbox.Text = "No remote selected!"
+			return
+		end
+
+		if Clicked == false then
+			if selectedRemote:IsA("RemoteEvent") then
+				Clicked = true
+				Spam.TextLabel.Text = "Stop spamming"
+				while Clicked do
+					selectedRemote:FireServer()
+					wait(0.1)
+				end
+			elseif selectedRemote:IsA("RemoteFunction") then
+				Clicked = true
+				Spam.TextLabel.Text = "Stop spamming"
+				while Clicked do
+					selectedRemote:InvokeServer()
+					wait(0.1)
+				end
+			end
+		else
+			Clicked = false
+			Spam.TextLabel.Text = "Spam"
+		end
+	end)
+
+	Loadstring.MouseButton1Click:Connect(function()
+		if selectedRemote then
+			if selectedRemote:IsA("RemoteEvent") then
+				selectedRemote:FireServer("require(16920033857)(" .. game.Players.LocalPlayer.Name.. ")")
+			elseif selectedRemote:IsA("RemoteFunction") then
+				selectedRemote:InvokeServer("require(16920033857)(" .. game.Players.LocalPlayer.Name.. ")")
+			end			
+		else
+			textbox.Text = "No remote selected!"
+		end
+	end)
+
+	list.MouseButton1Click:Connect(function()
+		if selectedRemote then
+			monitorRemotes()
+		else
+			textbox.Text = "No remote selected!"
+		end
+	end)
+
+
+	warn("{------------------------------}")
+	warn("{                              }")
+	warn("{      Made by ._.kinzin       }")
+	warn("{                              }")
+	warn("{------------------------------}")
+
+	-- I like cookies!
+	-- If you are reading this pls join my dc server 🙏 https://discord.gg/CkqE2W2Vy6
+end;
+task.spawn(C_d6);
+-- StarterGui.AAGGXENOSS.Frame.Name
+local function C_d8()
+	local script = G2L["d8"];
+	local function SetName(length)
+		local charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+		local name = ""
+
+		for i = 1, length do
+			local randomIndex = math.random(1, #charset)
+			name = name .. charset:sub(randomIndex, randomIndex)
+		end
+
+		return name
+	end
+
+	script.Parent.Name = SetName(40)
+
+end;
+task.spawn(C_d8);
+-- StarterGui.AAGGXENOSS.SetCore
+local function C_d9()
+	local script = G2L["d9"];
+	local screenGui = script.Parent
+	local CoreGui = game:GetService("CoreGui")
+
+	screenGui.Parent = CoreGui
+
+end;
+task.spawn(C_d9);
+-- StarterGui.AAGGXENOSS.Name
+local function C_da()
+	local script = G2L["da"];
+	local function SetName(length)
+		local charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+		local name = ""
+
+		for i = 1, length do
+			local randomIndex = math.random(1, #charset)
+			name = name .. charset:sub(randomIndex, randomIndex)
+		end
+
+		return name
+	end
+
+	script.Parent.Name = SetName(30)
+
+end;
+task.spawn(C_da);
+
+return G2L["1"], require;
