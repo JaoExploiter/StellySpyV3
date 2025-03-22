@@ -4,7 +4,7 @@
 
 **Oficial Loadstring:**
 ```lua
--- Made by ._.kinzin join discord! https://discord.gg/CkqE2W2Vy6![StellySpy Neon](https://github.com/user-attachments/assets/324ebb14-9ab8-47d2-bb0c-e6fd7afa7411)
+-- Made by ._.kinzin join discord! https://discord.gg/CkqE2W2Vy6!
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/JaoExploiter/StellySpyV3/refs/heads/main/StellySpyV3.txt"))()
 ```
