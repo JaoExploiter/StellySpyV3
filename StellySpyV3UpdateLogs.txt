@@ -32,4 +32,14 @@ Improved performance of the generator.
 Introduced the "Loadstring" button (used for backdoor detection). Use with caution—only if you know how to handle it.
 Added the "Update Remotes" button to refresh the Remotes List.
 
+**(22/03/25) Version 1.4:**
+
+- **V3.2 Coming soon. 👀**
+- Added a new highlight feature.
+- Optimized the script for better performance.
+- Expanded support for more executors.
+- UI improvements and adjustments.
+- Removed the "Loadstrings" buttons (they weren’t necessary).
+- Removed the minimize button (a new one will be added in the next update).
+
 {--------------------------------}
