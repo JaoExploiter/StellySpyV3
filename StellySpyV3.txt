@@ -4075,7 +4075,7 @@ task.spawn(C_8c);
 -- StarterGui.AAGGXENOSS.Frame.Buttons.RunS.LocalScript
 local function C_8d()
 	local script = G2L["8d"];
-	local ab = script.Parent.Parent.Parent.CodeSample
+	local ab = script.Parent.Parent.Parent.CodeHolder.CodeSample
 
 	script.Parent.MouseButton1Click:Connect(function()
 		local code = ab.Text
