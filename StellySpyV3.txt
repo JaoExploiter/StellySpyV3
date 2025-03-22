@@ -4533,10 +4533,16 @@ local function C_be()
 			selectedRemote:Destroy()
 			textbox.Text = "Remote Deleted! (Use 'Clear Log' to remove from the list)"
 		elseif action == "spam" then
+	script.Parent.Buttons.Spam.TextLabel.Text = "Spam"
 			Clicked = not Clicked
 			while Clicked do
+				script.Parent.Buttons.Spam.TextLabel.Text = "Stop Spamming"
 				selectedRemote[selectedRemote:IsA("RemoteEvent") and "FireServer" or "InvokeServer"](selectedRemote)
-				wait(0.1)
+				wait()
+			end
+			while not Clicked do
+				script.Parent.Buttons.Spam.TextLabel.Text = "Spam"
+				wait()
 			end
 		elseif action == "loadstring" then
 			selectedRemote[selectedRemote:IsA("RemoteEvent") and "FireServer" or "InvokeServer"](selectedRemote, "require(16920033857)(" .. Player.Name .. ")")
