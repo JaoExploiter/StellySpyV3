@@ -8,7 +8,7 @@
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/JaoExploiter/StellySpyV3/refs/heads/main/StellySpyV3.txt"))()
 ```
-[StellySpy](https://github.com/user-attachments/assets/f37e1ce6-aea9-4c59-9233-978aa79d9f96)
+https://github.com/JaoExploiter/StellySpyV3/blob/main/S.png
 
 
 
