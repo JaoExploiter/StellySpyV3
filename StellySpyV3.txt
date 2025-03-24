@@ -7,7 +7,19 @@ Converted by G2L by @uniquadev
 
 ]]
 
+if getgenv().Stelly == true then
+local AkaliNotif = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/Dynissimo/main/Scripts/AkaliNotif.lua"))();
+	local Notify = AkaliNotif.Notify;
+
+	Notify({
+		Description = "StellySpy V3 Already Executed!";
+		Title = "StellySpy V3";
+		Duration = 10;
+	});
+else
+
 local G2L = {};
+getgenv().Stelly = true
 G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
 G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
 G2L["1"]["ResetOnSpawn"] = false;
@@ -3066,7 +3078,7 @@ end;
 local function C_5()
 local script = G2L["5"];
 	script.Parent.MouseButton1Click:Connect(function()
-	
+	        getgenv().Stelly = false
 		script.Parent.Parent.Parent.Parent:Destroy()
 		
 	end)
@@ -4563,6 +4575,15 @@ local function C_be()
 	warn("{                              }")
 	warn("{------------------------------}")
 
+        local AkaliNotif = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/Dynissimo/main/Scripts/AkaliNotif.lua"))();
+	local Notify = AkaliNotif.Notify;
+
+	Notify({
+		Description = "StellySpy V3 Loaded! Loading remotes...";
+		Title = "StellySpy V3";
+		Duration = 5;
+	});
+
 end;
 task.spawn(C_be);
 -- StarterGui.AAGGXENOSS.Frame.Name
@@ -4668,3 +4689,4 @@ end;
 task.spawn(C_cf);
 
 return G2L["1"], require;
+end
