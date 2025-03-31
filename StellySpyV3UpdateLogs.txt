@@ -42,4 +42,10 @@ Added the "Update Remotes" button to refresh the Remotes List.
 - Removed the "Loadstrings" buttons (they weren’t necessary).
 - Removed the minimize button (a new one will be added in the next update).
 
+**(31/03/25) Version 1.5:**
+
+- Further optimized the script for better performance.
+- Added a new button "Decompile" to decompile the script.
+- **V3.2 coming soon.** 👀 (maybe next update)
+
 {--------------------------------}
