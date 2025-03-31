@@ -4357,256 +4357,272 @@ end;
 task.spawn(C_b7);
 -- StarterGui.AAGGXENOSS.Frame.Main
 local function C_b8()
-	local script = G2L["b8"];
-	local ReplicatedStorage = game:GetService("ReplicatedStorage")
-	local Player = game.Players.LocalPlayer
-	local executedRemotes, buttonList = {}, {}
-	local textbox, buttons = script.Parent.CodeHolder.CodeSample, script.Parent.Remotes
-	local selectedRemote, Clicked = nil, false
-	local frame = script.Parent
-	local codebox = {textbox = textbox}
+local script = G2L["b8"];
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local Player = game.Players.LocalPlayer
+local executedRemotes, buttonList = {}, {}
+local textbox, buttons = script.Parent.CodeHolder.CodeSample, script.Parent.Remotes
+local selectedRemote, Clicked = nil, false
+local frame = script.Parent
+local codebox = {textbox = textbox}
 
-	--- SetRaw
-	--- @param t text
-	function codebox:SetRaw(t)
-		self.textbox.Text = tostring(t)
-	end
+--- SetRaw
+--- @param t text
+function codebox:SetRaw(t)
+	self.textbox.Text = tostring(t)
+end
 
-	--- totext
-	--- @param value any
-	local function totext(value)
-		if type(value) == "string" then
-			return value
-		elseif type(value) == "number" then
-			return tostring(value)
-		elseif type(value) == "boolean" then
-			return value and "true" or "false"
-		elseif type(value) == "table" then
-			local result = "{"
-			for key, val in pairs(value) do
-				result = result .. "[" .. totext(key) .. "] = " .. totext(val) .. ", "
-			end
-			return result:sub(1, -3) .. "}"
-		elseif type(value) == "function" then
-			return tostring(value)
-		elseif type(value) == "userdata" then
-			return "userdata"
-		elseif type(value) == "thread" then
-			return "thread"
-		elseif type(value) == "nil" then
-			return "nil"
-		else
-			return "unsupported type"
+--- totext
+--- @param value any
+local function totext(value)
+	if type(value) == "string" then
+		return value
+	elseif type(value) == "number" then
+		return tostring(value)
+	elseif type(value) == "boolean" then
+		return value and "true" or "false"
+	elseif type(value) == "table" then
+		local result = "{"
+		for key, val in pairs(value) do
+			result = result .. "[" .. totext(key) .. "] = " .. totext(val) .. ", "
 		end
+		return result:sub(1, -3) .. "}"
+	elseif type(value) == "function" then
+		return tostring(value)
+	elseif type(value) == "userdata" then
+		return "userdata"
+	elseif type(value) == "thread" then
+		return "thread"
+	elseif type(value) == "nil" then
+		return "nil"
+	else
+		return "unsupported type"
 	end
+end
 
-	--- getFunctionsDetails
-	--- @param remote instance expected remote event or remote funtion
-	local function getFunctionDetails(remote)
-		if remote:IsA("RemoteFunction") then
-			return "RemoteFunction", "Expected return type (custom)", "InvokeServer"
-		elseif remote:IsA("RemoteEvent") then
-			return "RemoteEvent", "No return value", "FireServer"
-		end
+--- getFunctionsDetails
+--- @param remote instance expected remote event or remote funtion
+local function getFunctionDetails(remote)
+	if remote:IsA("RemoteFunction") then
+		return "RemoteFunction", "Expected return type (custom)", "InvokeServer"
+	elseif remote:IsA("RemoteEvent") then
+		return "RemoteEvent", "No return value", "FireServer"
 	end
+end
 
-	--- returnrequire
-	--- @param m instance expected ModuleScript
-	local function rr(m)
-		return require(m)
-	end
+--- returnrequire
+--- @param m instance expected ModuleScript
+local function rr(m)
+	return require(m)
+end
 
-	--- getFullPath
-	--- @param instance instance
-	local function getFullPath(instance)
-		if instance == game then return "game" end
-		if instance.Parent == game then return string.format("game:GetService(\"%s\")", instance.Name) end
-		if instance.Parent == Player then return "game:GetService(\"Players\").LocalPlayer." .. instance.Name end
-		return getFullPath(instance.Parent) .. "[\"" .. instance.Name .. "\"]"
-	end
+--- getFullPath
+--- @param instance instance
+local function getFullPath(instance)
+	if instance == game then return "game" end
+	if instance.Parent == game then return string.format("game:GetService(\"%s\")", instance.Name) end
+	if instance.Parent == Player then return "game:GetService(\"Players\").LocalPlayer." .. instance.Name end
+	return getFullPath(instance.Parent) .. "[\"" .. instance.Name .. "\"]"
+end
 
-	--- generateCode
-	--- @param remote instance expected RemoteEvent or RemoteFunction
-	local function generateCode(remote)
-		local type, returnType, method = getFunctionDetails(remote)
-		if not type then return "-- Unknown remote type!" end
-		local fullPath = getFullPath(remote)
-		local exampleUsage = string.format("%s:%s()", fullPath, method)
-		return string.format([[-- Remote Name: %s
+--- generateCode
+--- @param remote instance expected RemoteEvent or RemoteFunction
+local function generateCode(remote)
+	local type, returnType, method = getFunctionDetails(remote)
+	if not type then return "-- Unknown remote type!" end
+	local fullPath = getFullPath(remote)
+	local exampleUsage = string.format("%s:%s()", fullPath, method)
+	return string.format([[-- Remote Name: %s
 -- Type: %s
 -- Return Type: %s
 %s]], 
-			remote.Name, type, returnType, exampleUsage)
-	end
+		remote.Name, type, returnType, exampleUsage)
+end
 
-	--- getGeneratedCode
-	--- @param remote instance expected RemoteEvent or RemoteFunction
-	local function getGeneratedCode(remote)
-		return generateCode(remote)
-	end
+--- getGeneratedCode
+--- @param remote instance expected RemoteEvent or RemoteFunction
+local function getGeneratedCode(remote)
+	return generateCode(remote)
+end
 
-	--- returnvalue
-	--- @param v any
-	local function rv(v)
-		return v
-	end
+--- returnvalue
+--- @param v any
+local function rv(v)
+	return v
+end
 
-	--- returnstring
-	--- @param v any
-	local function rs(v)
-		return tostring(v)
-	end
+--- returnstring
+--- @param v any
+local function rs(v)
+	return tostring(v)
+end
 
-	--- returnnumber
-	--- @param v any
-	local function rn(v)
-		return tonumber(v)
-	end
+--- returnnumber
+--- @param v any
+local function rn(v)
+	return tonumber(v)
+end
 
-	--- returntext
-	--- @param v any
-	local function rt(v)
-		return totext(v)
-	end
+--- returntext
+--- @param v any
+local function rt(v)
+	return totext(v)
+end
 
-	--- newbutton
-	--- @param n any
-	--- @param t text
-	--- @param f function
-	local function newbutton(n, t, f)
-		local c = script.Parent.Buttons.Run:Clone()
-		c.TextLabel.Text = rt(t)
-		c.Name = n
-		c.Parent = script.Parent.Buttons
-		local function animate()
-			local script = c.Animate
-			local tweenService = game:GetService("TweenService")
-
-			local button = script.Parent
-			local border = button:WaitForChild("Border", 10)
-
-			local uistroke = button:FindFirstChildWhichIsA("UIStroke")
-
-			button.MouseEnter:Connect(function()
-				tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0}):Play()
-			end)
-
-			button.MouseLeave:Connect(function()
-				tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0.5}):Play()
-			end)
-
-			button.MouseButton1Down:Connect(function()
-				tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
-					Size = UDim2.new(1, 0, 1, 0),
-				}):Play()
-
-				wait(2)
-
-				tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
-					Size = UDim2.new(0.05, 0, 1, 0),
-				}):Play()
-			end)
-
-			button.MouseButton1Up:Connect(function()
-				tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
-					Size = UDim2.new(0.05, 0, 1, 0),
-				}):Play()
-			end)
-
-		end
-
-		task.spawn(animate)
-
-		c.MouseButton1Click:Connect(function()
-			f()
-		end)
-	end
-
-	local function updateButton(remote, button)
-		button.Text, button.Visible = remote.Name, true
-		button.MouseButton1Click:Connect(function()
-			selectedRemote, textbox.Text = remote, generateCode(remote)
-		end)
-	end
-
-	local function processRemote(remote)
-		if executedRemotes[remote] then return end
-		executedRemotes[remote] = true
-
-		task.wait(0.2) 
-
-		local button = buttons.Remote1:Clone()
-		button.Name = "Remote" .. (#buttonList + 1)
-		button.Parent = buttons
-		table.insert(buttonList, button)
-		updateButton(remote, button)
-	end
-
-	local function monitorRemotes()
-		local function checkDescendant(descendant)
-			if descendant:IsA("RemoteEvent") or descendant:IsA("RemoteFunction") then processRemote(descendant) end
-		end
-
-		for _, service in ipairs({ReplicatedStorage, Player, Player.Backpack, Player.PlayerGui, Player.PlayerScripts, game.TextChatService}) do
-			for _, remote in ipairs(service:GetDescendants()) do checkDescendant(remote) end
-			service.DescendantAdded:Connect(checkDescendant)
-		end
-	end
-
-	local function handleAction(action)
-		if not selectedRemote then codebox:SetRaw([[No remote selected!]]) return end
-
-		if action == "run" then
-			selectedRemote[selectedRemote:IsA("RemoteEvent") and "FireServer" or "InvokeServer"](selectedRemote)
-			print(selectedRemote.Name .. " Fired!")
-		elseif action == "duplicate" then
-			selectedRemote:Clone().Parent = ReplicatedStorage
-		elseif action == "exclude" then
-			for _, button in ipairs(buttonList) do
-				if button.Text == selectedRemote.Name then button.Visible = false break end
-			end
-		elseif action == "delete" then
-			selectedRemote:Destroy()
-			codebox:SetRaw("Remote Deleted! (Use 'Clear Log' to remove from the list)")
-		elseif action == "spam" then
-			script.Parent.Buttons.Spam.TextLabel.Text = "Spam"
-			Clicked = not Clicked
-			while Clicked do
-				script.Parent.Buttons.Spam.TextLabel.Text = "Stop Spamming"
-				selectedRemote[selectedRemote:IsA("RemoteEvent") and "FireServer" or "InvokeServer"](selectedRemote)
-				wait()
-			end
-			while not Clicked do
-				script.Parent.Buttons.Spam.TextLabel.Text = "Spam"
-				wait()
-			end
-		elseif action == "list" then
-			monitorRemotes()
-		end
-	end
-
-	monitorRemotes()
-
-	for name, action in pairs({Run = "run", CopyR = "duplicate", ClearL = "exclude", ExL = "delete", Spam = "spam", UpList = "list"}) do
-		script.Parent.Buttons[name].MouseButton1Click:Connect(function() handleAction(action) end)
-	end
-	require(frame.wI0nil).Dragger(frame)
-	newbutton("decompile", [[Decompile]], function()
-		if selectedRemote then
-			if decompile then
-				local decompilation = decompile(getGeneratedCode(selectedRemote))
-				codebox:SetRaw(decompilation)
-			else
-				codebox:SetRaw([[An error occurred:
-	"The current executor you are using can't compile scripts."]])
-			end
-		else
-			codebox:SetRaw("No remote selected!")
-		end
+--- getinstance
+--- @param x any
+local function getinstance(x)
+	local success, instance = pcall(function()
+		return loadstring("return " .. x)()
 	end)
 
-	newbutton("UpLogs", [[Update Logs]], function()
-		codebox:SetRaw([[Updates Logs:
+	if success and instance then
+		return instance
+	else
+		return nil
+	end
+end
+
+--- newbutton
+--- @param n any
+--- @param t text
+--- @param f function
+local function newbutton(n, t, f)
+	local c = script.Parent.Buttons.Run:Clone()
+	c.TextLabel.Text = rt(t)
+	c.Name = n
+	c.Parent = script.Parent.Buttons
+	local function animate()
+		local script = c.Animate
+		local tweenService = game:GetService("TweenService")
+
+		local button = script.Parent
+		local border = button:WaitForChild("Border", 10)
+
+		local uistroke = button:FindFirstChildWhichIsA("UIStroke")
+
+		button.MouseEnter:Connect(function()
+			tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0}):Play()
+		end)
+
+		button.MouseLeave:Connect(function()
+			tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0.5}):Play()
+		end)
+
+		button.MouseButton1Down:Connect(function()
+			tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+				Size = UDim2.new(1, 0, 1, 0),
+			}):Play()
+
+			wait(2)
+
+			tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+				Size = UDim2.new(0.05, 0, 1, 0),
+			}):Play()
+		end)
+
+		button.MouseButton1Up:Connect(function()
+			tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+				Size = UDim2.new(0.05, 0, 1, 0),
+			}):Play()
+		end)
+
+	end
+
+	task.spawn(animate)
+
+	c.MouseButton1Click:Connect(function()
+		f()
+	end)
+end
+
+local function updateButton(remote, button)
+	button.Text, button.Visible = remote.Name, true
+	button.MouseButton1Click:Connect(function()
+		selectedRemote, textbox.Text = remote, generateCode(remote)
+	end)
+end
+
+local function processRemote(remote)
+	if executedRemotes[remote] then return end
+	executedRemotes[remote] = true
+
+	task.wait(0.2) 
+
+	local button = buttons.Remote1:Clone()
+	button.Name = "Remote" .. (#buttonList + 1)
+	button.Parent = buttons
+	table.insert(buttonList, button)
+	updateButton(remote, button)
+end
+
+local function monitorRemotes()
+	local function checkDescendant(descendant)
+		if descendant:IsA("RemoteEvent") or descendant:IsA("RemoteFunction") then processRemote(descendant) end
+	end
+
+	for _, service in ipairs({ReplicatedStorage, Player, Player.Backpack, Player.PlayerGui, Player.PlayerScripts, game.TextChatService}) do
+		for _, remote in ipairs(service:GetDescendants()) do checkDescendant(remote) end
+		service.DescendantAdded:Connect(checkDescendant)
+	end
+end
+
+local function handleAction(action)
+	if not selectedRemote then codebox:SetRaw([[No remote selected!]]) return end
+
+	if action == "run" then
+		selectedRemote[selectedRemote:IsA("RemoteEvent") and "FireServer" or "InvokeServer"](selectedRemote)
+		print(selectedRemote.Name .. " Fired!")
+	elseif action == "duplicate" then
+		selectedRemote:Clone().Parent = ReplicatedStorage
+	elseif action == "exclude" then
+		for _, button in ipairs(buttonList) do
+			if button.Text == selectedRemote.Name then button.Visible = false break end
+		end
+	elseif action == "delete" then
+		selectedRemote:Destroy()
+		codebox:SetRaw("Remote Deleted! (Use 'Clear Log' to remove from the list)")
+	elseif action == "spam" then
+		script.Parent.Buttons.Spam.TextLabel.Text = "Spam"
+		Clicked = not Clicked
+		while Clicked do
+			script.Parent.Buttons.Spam.TextLabel.Text = "Stop Spamming"
+			selectedRemote[selectedRemote:IsA("RemoteEvent") and "FireServer" or "InvokeServer"](selectedRemote)
+			wait()
+		end
+		while not Clicked do
+			script.Parent.Buttons.Spam.TextLabel.Text = "Spam"
+			wait()
+		end
+	elseif action == "list" then
+		monitorRemotes()
+	end
+end
+
+monitorRemotes()
+
+for name, action in pairs({Run = "run", CopyR = "duplicate", ClearL = "exclude", ExL = "delete", Spam = "spam", UpList = "list"}) do
+	script.Parent.Buttons[name].MouseButton1Click:Connect(function() handleAction(action) end)
+end
+require(frame.wI0nil).Dragger(frame)
+newbutton("decompile", [[Decompile]], function()
+	if selectedRemote then
+		local tx = getGeneratedCode(selectedRemote)
+		local instance = getinstance(tx)
+		if decompile then
+			local decompilation = decompile(Instance)
+			codebox:SetRaw(decompilation)
+		else
+			codebox:SetRaw([[An error occurred:
+	"The current executor you are using can't compile scripts."]])
+		end
+	else
+		codebox:SetRaw("No remote selected!")
+	end
+end)
+
+newbutton("UpLogs", [[Update Logs]], function()
+	codebox:SetRaw([[Updates Logs:
 			
 (31/03/25) Version 1.5:
 	
@@ -4615,26 +4631,24 @@ local function C_b8()
 - V3.2 coming soon. 👀
 Stay tuned for more updates!
 	]])
-	end)
+end)
 
-	warn("{------------------------------}")
-	warn("{                              }")
-	warn("{      Made by ._.kinzin       }")
-	warn("{                              }")
-	warn("{------------------------------}")
+warn("{------------------------------}")
+warn("{                              }")
+warn("{      Made by ._.kinzin       }")
+warn("{                              }")
+warn("{------------------------------}")
 
-	local AkaliNotif = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/Dynissimo/main/Scripts/AkaliNotif.lua"))();
-	local Notify = AkaliNotif.Notify;
+local AkaliNotif = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/Dynissimo/main/Scripts/AkaliNotif.lua"))();
+local Notify = AkaliNotif.Notify;
 
-	Notify({
-		Description = "StellySpy V3";
-		Title = "Script Loaded! Loading remotes...";
-		Duration = 10;
-	});
+Notify({
+	Description = "StellySpy V3";
+	Title = "Script Loaded! Loading remotes...";
+	Duration = 10;
+});
 
-	getgenv().Stelly = true
-
-
+getgenv().Stelly = true
 end;
 task.spawn(C_b8);
 -- StarterGui.AAGGXENOSS.Frame.Name
