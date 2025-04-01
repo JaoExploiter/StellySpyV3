@@ -4365,6 +4365,7 @@ local textbox, buttons = script.Parent.CodeHolder.CodeSample, script.Parent.Remo
 local selectedRemote, Clicked = nil, false
 local frame = script.Parent
 local codebox = {textbox = textbox}
+require(frame.wI0nil).Dragger(frame)
 
 --- SetRaw
 --- @param t text
@@ -4604,7 +4605,7 @@ monitorRemotes()
 for name, action in pairs({Run = "run", CopyR = "duplicate", ClearL = "exclude", ExL = "delete", Spam = "spam", UpList = "list"}) do
 	script.Parent.Buttons[name].MouseButton1Click:Connect(function() handleAction(action) end)
 end
-require(frame.wI0nil).Dragger(frame)
+
 newbutton("decompile", [[Decompile]], function()
 	if selectedRemote then
 		local tx = getGeneratedCode(selectedRemote)
