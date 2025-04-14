@@ -51,7 +51,15 @@ Added the "Update Remotes" button to refresh the Remotes List.
 (14/04/25) Version 2:
 	
 - Added a loading screen.
-- Added Injections Methods. (you can read the modes on https://github.com/JaoExploiter/StellySpyV3/blob/main/StellySpyV3UpdateLogs.txt)
+- Added Injections Methods Modes Are:
+Methods:
+"CoreGui" (Create Gui on CoreGui)
+"PlayerGui" (Create Gui on PlayerGui)
+"Bypass" (Bypass most Gui AntiCheats)
+
+local INJECTION_METHOD = "CoreGui"
+local INJECTION_METHOD = "PlayerGui"
+local INJECTION_METHOD = "Bypass"
 - Fixed some silly errors.
 - Fixed crashing errors.
 - Adding lines on TextBox soon.
