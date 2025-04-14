@@ -4236,7 +4236,7 @@ Stay tuned for more updates!
 		load.Text = "Loading Modules (0/3)"
 		updateLoadBar(0)
 		blurIn:Play()
-		wait(0.7)
+		wait(0.4)
 
 		local progress = 0
 		local steps = {10, 20, 30, 20, 20, 25, 20, 25, 25, 25}
@@ -4257,7 +4257,7 @@ Stay tuned for more updates!
 		else
 			load.Text = "Missing Scripts"
 		end
-		wait(0.7)
+		wait(0.4)
 
 		if check(main.resizerModule) ~= nil then
 			load.Text = "Loading Modules (3/3)"
@@ -4266,7 +4266,7 @@ Stay tuned for more updates!
 		else
 			load.Text = "Missing Scripts"
 		end
-		wait(0.7)
+		wait(0.4)
 
 		load.Text = "Preparing Execution Environment..."
 		progress = progress + steps[4]
@@ -4276,47 +4276,47 @@ Stay tuned for more updates!
 		load.Text = "Loading Configuration Files..."
 		progress = progress + steps[5]
 		updateLoadBar(progress)
-		wait(0.6)
+		wait(0.15)
 
 		load.Text = "Verifying System Dependencies..."
 		progress = progress + steps[6]
 		updateLoadBar(progress)
-		wait(0.7)
+		wait(0.2)
 
 		load.Text = "Validating File Integrity..."
 		progress = progress + steps[7]
 		updateLoadBar(progress)
-		wait(0.5)
+		wait(0.3)
 
 		load.Text = "Syncing Data..."
 		progress = progress + steps[8]
 		updateLoadBar(progress)
-		wait(0.4)
+		wait(0.25)
 
 		load.Text = "Connecting to Remote Servers..."
 		progress = progress + steps[9]
 		updateLoadBar(progress)
-		wait(0.4)
+		wait(0.2)
 
 		load.Text = "Initializing Logging System..."
 		progress = progress + steps[10]
 		updateLoadBar(progress)
-		wait(0.8)
+		wait(0.4)
 
 		t([[Checking Executor.]])
 		progress = progress + 15
 		updateLoadBar(progress)
-		wait(0.6)
+		wait(0.32)
 
 		t([[Checking Executor..]])
 		progress = progress + 15
 		updateLoadBar(progress)
-		wait(0.6)
+		wait(0.32)
 
 		t([[Checking Executor...]])
 		progress = progress + 15
 		updateLoadBar(progress)
-		wait(0.6)
+		wait(0.32)
 
 		if setclipboard then
 			t([[Executor Approved.]])
@@ -4325,7 +4325,7 @@ Stay tuned for more updates!
 			missing_arg = true
 		end
 
-		wait(1)
+		wait(0.3)
 		t([[Checking Remotes...]])
 		_G.UpdateR()
 		progress = 345
