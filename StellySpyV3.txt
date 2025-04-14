@@ -4336,10 +4336,10 @@ Stay tuned for more updates!
 		t([[Launching UI.]])
 		wait(0.4)
 		script.Parent.Visible = false
+                main.Visible = true
 		blurOut:Play()
 		blurOut.Completed:Wait()
 		blur:Destroy()
-		main.Visible = true
 	end;
 	task.spawn(C_9c);
 	-- StarterGui.AAGGXENOSS.	.ok.LocalScript
