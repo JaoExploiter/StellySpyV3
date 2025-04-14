@@ -48,4 +48,13 @@ Added the "Update Remotes" button to refresh the Remotes List.
 - Added a new button "Decompile" to decompile the script.
 - **V3.2 coming soon.** 👀 (maybe next update)
 
+(14/04/25) Version 2:
+	
+- Added a loading screen.
+- Added Injections Methods. (you can read the modes on https://github.com/JaoExploiter/StellySpyV3/blob/main/StellySpyV3UpdateLogs.txt)
+- Fixed some silly errors.
+- Fixed crashing errors.
+- Adding lines on TextBox soon.
+Stay tuned for more updates!
+
 {--------------------------------}
