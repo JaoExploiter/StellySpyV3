@@ -4236,7 +4236,7 @@ Stay tuned for more updates!
 		load.Text = "Loading Modules (0/3)"
 		updateLoadBar(0)
 		blurIn:Play()
-		wait(0.4)
+		wait(0.35)
 
 		local progress = 0
 		local steps = {10, 20, 30, 20, 20, 25, 20, 25, 25, 25}
@@ -4248,7 +4248,7 @@ Stay tuned for more updates!
 		else
 			load.Text = "Missing Scripts"
 		end
-		wait(0.7)
+		wait(0.35)
 
 		if check(main.wI0nil) ~= nil then
 			load.Text = "Loading Modules (2/3)"
@@ -4257,7 +4257,7 @@ Stay tuned for more updates!
 		else
 			load.Text = "Missing Scripts"
 		end
-		wait(0.4)
+		wait(0.35)
 
 		if check(main.resizerModule) ~= nil then
 			load.Text = "Loading Modules (3/3)"
@@ -4266,7 +4266,7 @@ Stay tuned for more updates!
 		else
 			load.Text = "Missing Scripts"
 		end
-		wait(0.4)
+		wait(0.35)
 
 		load.Text = "Preparing Execution Environment..."
 		progress = progress + steps[4]
