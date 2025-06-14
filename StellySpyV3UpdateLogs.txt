@@ -65,4 +65,11 @@ local INJECTION_METHOD = "Bypass"
 - Adding lines on TextBox soon.
 Stay tuned for more updates!
 
+(14/06/25) Version 2.2:
+
+- Temporarily updated the loading screen for Pride Month 🌈  
+- Introduced a new notification system: **StellyNotifyV2**  
+- Improved remote event detection logic  
+- Happy Pride Month! Be proud, be yourself, and spread love 💖
+
 {--------------------------------}
