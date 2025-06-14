@@ -3706,6 +3706,7 @@ else
 		local script = G2L["3e"];
 		script.Parent.MouseButton1Click:Connect(function()
 			script.Parent.Parent.Parent.Parent:Destroy()
+_G.Stelly = false
 		end)
 	end;
 	task.spawn(C_3e);
@@ -3895,12 +3896,12 @@ else
 
 		script.Parent.MouseButton1Click:Connect(function()
 			a.Text = [[
-	-- Welcome to V3!	
-	-- Made by Kinzin #._.kinzin.
-	-- Huge thanks to deusferrinho for the UI.
-	-- 2! Read update logs!
-	-- Report errors on the Discord server.
-	-- Enjoy playing with remotes!
+-- Welcome to V3!	
+-- Made by Kinzin #._.kinzin.
+-- Huge thanks to deusferrinho for the UI.
+-- 2.2! Read update logs!
+-- Report errors on the Discord server.
+-- Enjoy playing with remotes!
 	]]
 		end)
 	end;
@@ -4970,17 +4971,17 @@ If you can't respect others, this game is not for you.
 	-- StarterGui.AAGGXENOSS- Pride verison.Frame.CodeHolder.CodeSample.Resize
 	local function C_c8()
 		local script = G2L["c8"];
-		local _0x12af = script["\x50\x61\x72\x65\x6e\x74"]
-		local _0x3b71 = _0x12af["\x50\x61\x72\x65\x6e\x74"]
+	local label = script.Parent
+local container = label.Parent
 
-		local function _0xa1f9()
-			local _0x5c9e = math["\x6d\x61\x78"](1.003 * _0x3b71["\x41\x62\x73\x6f\x6c\x75\x74\x65\x53\x69\x7a\x65"]["\x58"], _0x12af["\x54\x65\x78\x74\x42\x6f\x75\x6e\x64\x73"]["\x58"])
-			local _0x99dc = math["\x6d\x61\x78"](1.036 * _0x3b71["\x41\x62\x73\x6f\x6c\x75\x74\x65\x53\x69\x7a\x65"]["\x59"], _0x12af["\x54\x65\x78\x74\x42\x6f\x75\x6e\x64\x73"]["\x59"])
-			_0x12af["\x53\x69\x7a\x65"] = UDim2["\x6e\x65\x77"](0, _0x5c9e, 0, _0x99dc)
-		end
+local function updateSize()
+	local w = math.max(container.AbsoluteSize.X * 1.003, label.TextBounds.X)
+	local h = math.max(container.AbsoluteSize.Y * 1.036, label.TextBounds.Y)
+	label.Size = UDim2.new(0, w, 0, h)
+end
 
-		_0x12af["\x47\x65\x74\x50\x72\x6f\x70\x65\x72\x74\x79\x43\x68\x61\x6e\x67\x65\x64\x53\x69\x67\x6e\x61\x6c"]("\x54\x65\x78\x74"):Connect(_0xa1f9)
-		_0xa1f9()
+label:GetPropertyChangedSignal("Text"):Connect(updateSize)
+updateSize()
 
 	end;
 	task.spawn(C_c8);
