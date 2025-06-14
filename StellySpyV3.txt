@@ -4828,7 +4828,7 @@ else
 				if descendant:IsA("RemoteEvent") or descendant:IsA("RemoteFunction") then processRemote(descendant) end
 			end
 
-			for _, service in ipairs({game:GetDescendants(), game:GetService("RunService"), game:GetService("ReplicatedFirst"), game:GetService("Debris"), workspace, ReplicatedStorage, Player, Player.Backpack, Player.PlayerGui, Player.PlayerScripts, game.TextChatService}) do
+			for _, service in ipairs({game:GetService("RunService"), game:GetService("ReplicatedFirst"), game:GetService("Debris"), workspace, ReplicatedStorage, Player, Player.Backpack, Player.PlayerGui, Player.PlayerScripts, game.TextChatService}) do
 				for _, remote in ipairs(service:GetDescendants()) do checkDescendant(remote) end
 				service.DescendantAdded:Connect(checkDescendant)
 			end
