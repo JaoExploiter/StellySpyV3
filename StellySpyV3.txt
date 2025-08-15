@@ -4157,7 +4157,7 @@ Previous 2.4 files were lost, so this version has been rebuilt from scratch.
 
 		b:Connect(function()
             _G.Stelly = false
-			(((((a.Parent).Parent).Parent).Parent)):Destroy()
+			a.Parent.Parent.Parent:Destroy()
 		end)
 
 	end;
@@ -5068,5 +5068,6 @@ Previous 2.4 files were lost, so this version has been rebuilt from scratch.
 
 	return G2L["1"], require;
 end
+
 
 
