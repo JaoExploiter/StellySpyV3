@@ -78,7 +78,8 @@ Stay tuned for more updates!
 - Added Remote Search Function: Implemented a new feature that allows searching remotely via the SearchRemote function.
 
 💾 Note
-Previous 2.4 files were lost, so this version has been rebuilt from scratch.
+Previous 2.3 files were lost, so this version has been rebuilt from scratch.
 
 {--------------------------------}
+
 
