@@ -31,26 +31,38 @@ if _G.Stelly == true then
 		Duration = 10;
 	});
 else
-	_G.Stelly = true
-	
-	--[=[
- d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
-88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
-88      88    88    88            odD'      88      88    88 88ooo88 
-88  ooo 88    88    88          .88'        88      88    88 88~~~88 
-88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
- Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
-]=]
-
-	-- Instances: 206 | Scripts: 47 | Modules: 8 | Tags: 0
+_G.Stelly = true
+	_G.InjectMethod = INJECTION_METHOD
 	local G2L = {};
+	if INJECTION_METHOD == "Bypass" then
+		local p=game.Players.LocalPlayer
+		local g=p:WaitForChild("PlayerGui")
 
-	-- StarterGui.AAGGXENOSS
-	G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
-	G2L["1"]["Name"] = [[AAGGXENOSS]];
-	G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
-	G2L["1"]["ResetOnSpawn"] = false;
+		local f=function() 
+			local t={}
+			for _,v in pairs(g:GetChildren()) do
+				if v:IsA("ScreenGui") then table.insert(t,v) end
+			end
+			if #t>0 then return t[math.random(1,#t)] end
+		end
 
+		local s=f()
+		if s then
+			s.ResetOnSpawn=false
+			s.Enabled=true
+			G2L["1"] = s
+		end
+	else
+		G2L["1"] = Instance.new("ScreenGui");
+		G2L["1"]["Name"] = [[AAGGXENOSS]];
+		G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+		G2L["1"]["ResetOnSpawn"] = false;
+		if INJECTION_METHOD == "PlayerGui" then
+			G2L["1"]["Parent"] =  game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui");
+		elseif INJECTION_METHOD == "CoreGui" then
+			G2L["1"]["Parent"] =  game:GetService("CoreGui")
+		end
+	end
 
 	-- StarterGui.AAGGXENOSS.Client
 	G2L["2"] = Instance.new("Folder", G2L["1"]);
@@ -277,7 +289,7 @@ else
 
 	-- StarterGui.AAGGXENOSS.	
 	G2L["1e"] = Instance.new("Frame", G2L["1"]);
-	G2L["1e"]["Visible"] = false;
+	G2L["1e"]["Visible"] = true;
 	G2L["1e"]["BorderSizePixel"] = 0;
 	G2L["1e"]["BackgroundColor3"] = Color3.fromRGB(58, 58, 58);
 	G2L["1e"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
@@ -491,6 +503,7 @@ else
 	-- StarterGui.AAGGXENOSS.Frame
 	G2L["33"] = Instance.new("Frame", G2L["1"]);
 	G2L["33"]["BorderSizePixel"] = 0;
+G2L["33"]["Visible"] = false;
 	G2L["33"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 	G2L["33"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
 	G2L["33"]["Size"] = UDim2.new(0, 425, 0, 250);
@@ -3852,9 +3865,9 @@ else
 			local fullPath = getFullPath(remote)
 			local exampleUsage = string.format("%s:%s()", fullPath, method)
 			return string.format([[-- Remote Name: %s
-	-- Type: %s
-	-- Return Type: %s
-	%s]], 
+-- Type: %s
+-- Return Type: %s
+%s]], 
 				remote.Name, type, returnType, exampleUsage)
 		end
 
@@ -4143,6 +4156,7 @@ Previous 2.4 files were lost, so this version has been rebuilt from scratch.
 		local b = a.MouseButton1Click
 
 		b:Connect(function()
+            _G.Stelly = false
 			(((((a.Parent).Parent).Parent).Parent)):Destroy()
 		end)
 
@@ -4333,12 +4347,12 @@ Previous 2.4 files were lost, so this version has been rebuilt from scratch.
 
 		script.Parent.MouseButton1Click:Connect(function()
 			a.Text = [[
-	-- Welcome to V3!	
-	-- Made by Kinzin #._.kinzin.
-	-- Huge thanks to deusferrinho for the UI.
-	-- 2! Read update logs!
-	-- Report errors on the Discord server.
-	-- Enjoy playing with remotes!
+-- Welcome to V3!	
+-- Made by Kinzin #._.kinzin.
+-- Huge thanks to deusferrinho for the UI.
+-- 2.4! Read update logs!
+-- Report errors on the Discord server.
+-- Enjoy playing with remotes!
 	]]
 		end)
 	end;
@@ -5054,4 +5068,5 @@ Previous 2.4 files were lost, so this version has been rebuilt from scratch.
 
 	return G2L["1"], require;
 end
+
 
