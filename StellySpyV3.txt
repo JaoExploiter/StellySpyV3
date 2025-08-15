@@ -3850,12 +3850,26 @@ G2L["33"]["Visible"] = false;
 
 		--- getFullPath
 		--- @param instance instance
-		local function getFullPath(instance)
-			if instance == game then return "game" end
-			if instance.Parent == game then return string.format("game:GetService(\"%s\")", instance.Name) end
-			if instance.Parent == Player then return "game:GetService(\"Players\").LocalPlayer." .. instance.Name end
-			return getFullPath(instance.Parent) .. "[\"" .. instance.Name .. "\"]"
-		end
+        local function getFullPath(instance)
+	    if not instance then
+		return "nil"
+	    end
+	    if instance == game then
+		return "game"
+	    end
+	    local parent = instance.Parent
+	    if not parent then
+		return instance.Name or "Error 55. Line 3862. Function getFullPath"
+	    end
+	    if parent == game then
+		return string.format("game:GetService(%q)", instance.Name)
+	    end
+	    if parent == LocalPlayer then
+		return string.format("game:GetService(%q).LocalPlayer.%s", "Players", instance.Name)
+	    end
+	    return string.format("%s[%q]", getFullPath(parent), instance.Name)
+end
+
 
 		--- generateCode
 		--- @param remote instance expected RemoteEvent or RemoteFunction
@@ -5068,6 +5082,7 @@ Previous 2.4 files were lost, so this version has been rebuilt from scratch.
 
 	return G2L["1"], require;
 end
+
 
 
 
