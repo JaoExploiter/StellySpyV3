@@ -7,7 +7,7 @@ Converted by G2L by @uniquadev
 
 ]]
 
-local INJECTION_METHOD = getgenv().InjectionMethod
+local INJECTION_METHOD = getgenv().InjectionMethod or "CoreGui"
 
 --[[^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Methods:
@@ -5054,3 +5054,4 @@ Previous 2.4 files were lost, so this version has been rebuilt from scratch.
 
 	return G2L["1"], require;
 end
+
