@@ -1,38 +1,38 @@
 {--------------------------------}
 Updates Logs:
 
-(03/01/25) 1.01:
+(01/03/25) 1.01:
 Fixed some bugs and errors.
 
-(04/01/25) 1.02:
+(01/04/25) 1.02:
 Added a New button "Fire or Invoke All" (Fire or invoke all remotes in the game)
 Fixed a error: "Wrong script path"
 Fixed a error in mobile support.
 
-(06/01/25) 1.03:
+(01/06/25) 1.03:
 Added a New button "Atack Remote" (He fires the remote no matter what. info: you can get kicked.")
 Fixed a error in the "Fire all remotes".
 
-(16/01/25) 1.03.1:
+(01/16/25) 1.03.1:
 Fixed the discord link
 
-(05/02/25) Version 1.04:
+(02/05/25) Version 1.04:
 Removed the "Attack Remote" button due to persistent bugs.
 Fixed several issues in the script.
 Resolved the recurring "incorrect remote path" error.
 Added a new button: "Spam" (Spam the remote)
 
-(09/02/25) Version 1.2:
+(02/09/25) Version 1.2:
 StellySpy now powerfully detects remotes in the local player's backpack!
 
-(09/02/25) Version 1.3:
+(02/09/25) Version 1.3:
 StellySpy now includes enhanced remote detection across PlayerGui, Chat, and PlayerScripts!
 Added a new button to maximize or minimize the interface.
 Improved performance of the generator.
 Introduced the "Loadstring" button (used for backdoor detection). Use with caution—only if you know how to handle it.
 Added the "Update Remotes" button to refresh the Remotes List.
 
-**(22/03/25) Version 1.4:**
+**(03/22/25) Version 1.4:**
 
 - **V3.2 Coming soon. 👀**
 - Added a new highlight feature.
@@ -42,13 +42,13 @@ Added the "Update Remotes" button to refresh the Remotes List.
 - Removed the "Loadstrings" buttons (they weren’t necessary).
 - Removed the minimize button (a new one will be added in the next update).
 
-**(31/03/25) Version 1.5:**
+**(03/31/25) Version 1.5:**
 
 - Further optimized the script for better performance.
 - Added a new button "Decompile" to decompile the script.
 - **V3.2 coming soon.** 👀 (maybe next update)
 
-(14/04/25) Version 2:
+(04/14/25) Version 2:
 	
 - Added a loading screen.
 - Added Injections Methods Modes Are:
@@ -65,11 +65,20 @@ local INJECTION_METHOD = "Bypass"
 - Adding lines on TextBox soon.
 Stay tuned for more updates!
 
-(14/06/25) Version 2.2:
+(06/14/25) Version 2.2:
 
 - Temporarily updated the loading screen for Pride Month 🌈  
 - Introduced a new notification system: **StellyNotifyV2**  
 - Improved remote event detection logic  
 - Happy Pride Month! Be proud, be yourself, and spread love 💖
 
+(08/14/2025) Version 2.4
+
+- Bug Fixes: Resolved various issues from previous versions to improve overall stability.
+- Added Remote Search Function: Implemented a new feature that allows searching remotely via the SearchRemote function.
+
+💾 Note
+Previous 2.4 files were lost, so this version has been rebuilt from scratch.
+
 {--------------------------------}
+
