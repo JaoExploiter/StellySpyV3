@@ -1,6 +1,7 @@
-# StellySpy V3 #
-**Stelly Spy is a debugging tool that allows you to view all the game remotes and use them to your advantage. (Unlike SimpleSpy, StellySpy is not a copy; it functions as a remote hub rather than intercepting client-server calls.)**
+# StellySpy V3
 
+StellySpy is a debugging tool that allows you to view all game remotes and use them to your advantage.
+(StellySpy is not a copy of SimpleSpy; it functions as a remote hub rather than just intercepting client-server calls.)
 
 **Oficial Loadstring:**
 ```lua
